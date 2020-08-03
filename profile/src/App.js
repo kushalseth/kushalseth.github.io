@@ -9,7 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Hosting React APP ON GITHUB page Connect with me at @kushalseth
-          (GITHUB) @kushalseth14 (Twitter)
+          (GITHUB) @kushalseth14 (Twitter) and 
         </p>
         <a
           className="App-link"
