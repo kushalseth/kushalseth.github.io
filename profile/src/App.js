@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import profile from "./images/profile.jpg";
+/*import profile from "./images/profile.jpg";*/
 
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
 { /*<!-- First Container  --> */}
 <div className="container-fluid bg-1 text-center">
   <h1 className="margin">KUSHAL SETH</h1>
-  <img src={profile} className="img-responsive img-circle margin" style={{display: "inline" }} alt="Bird" width="550" height="550" />
+  <img src="" className="img-responsive img-circle margin" style={{display: "inline" }} alt="Bird" width="550" height="550" />
   <h3>Transforming myself towards [#abc_vi] [ AI | ML | Blockchain | Cloud, Quantum & Distributed Systems | VR | IOT ]
   </h3>
   <h5>
