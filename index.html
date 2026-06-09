@@ -1,1 +1,2350 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>KushalSeth</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"><link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script><style>body{font:20px Montserrat,sans-serif;line-height:1.8;color:#f5f6f7}p{font-size:16px}.margin{margin-bottom:45px}.bg-1{background-color:#040807;color:#fff}.bg-2{background-color:#474e5d;color:#fff}.bg-3{background-color:#fff;color:#555}.bg-4{background-color:#2f2f2f;color:#fff}.container-fluid{padding-top:35px;padding-bottom:70px}.navbar{padding-top:15px;padding-bottom:15px;border:0;border-radius:0;margin-bottom:0;font-size:12px;letter-spacing:5px}.navbar-nav li a:hover{color:#1abc9c!important}div .wdth{margin:30px}</style><link href="/static/css/main.5f361e03.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(e){function r(r){for(var n,l,f=r[0],i=r[1],p=r[2],c=0,s=[];c<f.length;c++)l=f[c],Object.prototype.hasOwnProperty.call(o,l)&&o[l]&&s.push(o[l][0]),o[l]=0;for(n in i)Object.prototype.hasOwnProperty.call(i,n)&&(e[n]=i[n]);for(a&&a(r);s.length;)s.shift()();return u.push.apply(u,p||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,f=1;f<t.length;f++){var i=t[f];0!==o[i]&&(n=!1)}n&&(u.splice(r--,1),e=l(l.s=t[0]))}return e}var n={},o={1:0},u=[];function l(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=e,l.c=n,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(e,r){if(1&r&&(e=l(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)l.d(t,n,function(r){return e[r]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var f=this.webpackJsonpprofile=this.webpackJsonpprofile||[],i=f.push.bind(f);f.push=r,f=f.slice();for(var p=0;p<f.length;p++)r(f[p]);var a=i;t()}([])</script><script src="/static/js/2.bd5fb903.chunk.js"></script><script src="/static/js/main.261236fd.chunk.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>KushalBuilds — Building Products. Finding Co-builders.</title>
+    <!-- Privacy-friendly analytics by Plausible -->
+    <script
+      async
+      src="https://plausible.io/js/pa-siAjLcz04E-Fs9OVDXslu.js"
+    ></script>
+    <script>
+      ((window.plausible =
+        window.plausible ||
+        function () {
+          (plausible.q = plausible.q || []).push(arguments);
+        }),
+        (plausible.init =
+          plausible.init ||
+          function (i) {
+            plausible.o = i || {};
+          }));
+      plausible.init();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,400&family=Space+Mono:wght@400;700&family=Nunito:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --sun: #ffd60a;
+        --coral: #ff5757;
+        --mint: #00c49a;
+        --sky: #4cc9f0;
+        --ink: #0d0d0d;
+        --cream: #fffbf0;
+        --purple: #7b2fbe;
+        --orange: #ff8c42;
+        --pink: #ff6b9d;
+        --card-radius: 16px;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Nunito", sans-serif;
+        background: var(--cream);
+        color: var(--ink);
+        overflow-x: hidden;
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+        pointer-events: none;
+        z-index: 999;
+      }
+
+      /* ── NAV ── */
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.2rem clamp(1.5rem, 5vw, 4rem);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: rgba(255, 251, 240, 0.9);
+        backdrop-filter: blur(16px);
+        border-bottom: 2px solid var(--ink);
+      }
+      .logo {
+        font-family: "Fraunces", serif;
+        font-weight: 900;
+        font-size: clamp(1.3rem, 3vw, 1.7rem);
+        letter-spacing: -1px;
+        text-decoration: none;
+        color: var(--ink);
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+      .logo-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--coral);
+        animation: pulse 2s infinite;
+        display: inline-block;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.6);
+        }
+      }
+      .nav-links {
+        display: flex;
+        gap: 1.2rem;
+        list-style: none;
+      }
+      .nav-links a {
+        font-family: "Space Mono", monospace;
+        font-size: 0.75rem;
+        text-decoration: none;
+        color: var(--ink);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 0.35rem 0.75rem;
+        border: 2px solid transparent;
+        border-radius: 6px;
+        transition: all 0.18s;
+      }
+      .nav-links a:hover {
+        border-color: var(--ink);
+        background: var(--sun);
+      }
+
+      /* ── HERO ── */
+      .hero {
+        min-height: 92vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        overflow: hidden;
+      }
+      .hero-left {
+        background: var(--ink);
+        padding: clamp(3rem, 8vw, 6rem) clamp(2rem, 5vw, 5rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-left::before {
+        content: "";
+        position: absolute;
+        top: -80px;
+        right: -80px;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        background: var(--purple);
+        opacity: 0.28;
+        filter: blur(70px);
+      }
+      .hero-left::after {
+        content: "";
+        position: absolute;
+        bottom: -60px;
+        left: -60px;
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        background: var(--sky);
+        opacity: 0.18;
+        filter: blur(55px);
+      }
+      .hero-eyebrow {
+        font-family: "Space Mono", monospace;
+        font-size: 0.72rem;
+        color: var(--sun);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 1.2rem;
+        opacity: 0;
+        animation: fadeUp 0.6s 0.2s forwards;
+      }
+      .hero-headline {
+        font-family: "Fraunces", serif;
+        font-weight: 900;
+        font-size: clamp(2.8rem, 5vw, 5.2rem);
+        line-height: 1;
+        color: #fff;
+        margin-bottom: 1.5rem;
+        opacity: 0;
+        animation: fadeUp 0.6s 0.4s forwards;
+      }
+      .hero-headline span {
+        color: var(--sun);
+        font-style: italic;
+      }
+      .hero-sub {
+        font-size: 1.05rem;
+        color: rgba(255, 255, 255, 0.65);
+        line-height: 1.75;
+        max-width: 420px;
+        margin-bottom: 2.5rem;
+        opacity: 0;
+        animation: fadeUp 0.6s 0.6s forwards;
+      }
+      .hero-skills {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        opacity: 0;
+        animation: fadeUp 0.6s 0.75s forwards;
+      }
+      .hero-skill {
+        font-family: "Space Mono", monospace;
+        font-size: 0.62rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 0.32rem 0.75rem;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .hero-ctas {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        opacity: 0;
+        animation: fadeUp 0.6s 0.9s forwards;
+      }
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.9rem 1.8rem;
+        border-radius: 50px;
+        font-weight: 900;
+        font-size: 0.95rem;
+        text-decoration: none;
+        border: 2.5px solid transparent;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-family: "Nunito", sans-serif;
+      }
+      .btn-primary {
+        background: var(--sun);
+        color: var(--ink);
+        border-color: var(--sun);
+      }
+      .btn-primary:hover {
+        background: transparent;
+        color: var(--sun);
+        transform: translateY(-2px);
+      }
+      .btn-outline {
+        background: transparent;
+        color: #fff;
+        border-color: rgba(255, 255, 255, 0.4);
+      }
+      .btn-outline:hover {
+        border-color: #fff;
+        background: rgba(255, 255, 255, 0.1);
+        transform: translateY(-2px);
+      }
+
+      .hero-right {
+        background: var(--sun);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-right::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 20px,
+          rgba(0, 0, 0, 0.04) 20px,
+          rgba(0, 0, 0, 0.04) 21px
+        );
+      }
+      .floating-emoji-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        position: relative;
+        z-index: 2;
+      }
+      .emoji-bubble {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background: #fff;
+        border: 3px solid var(--ink);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.4rem;
+        box-shadow: 5px 5px 0 var(--ink);
+        animation: float var(--dur, 3s) ease-in-out infinite;
+        animation-delay: var(--delay, 0s);
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-12px);
+        }
+      }
+
+      /* ── SECTION HELPERS ── */
+      section {
+        padding: clamp(4rem, 8vw, 7rem) clamp(1.5rem, 5vw, 4rem);
+      }
+      .section-label {
+        font-family: "Space Mono", monospace;
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: var(--coral);
+        margin-bottom: 0.8rem;
+      }
+      .section-title {
+        font-family: "Fraunces", serif;
+        font-weight: 900;
+        font-size: clamp(2.2rem, 4vw, 3.4rem);
+        line-height: 1.1;
+        margin-bottom: 1.2rem;
+      }
+      .section-desc {
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: rgba(13, 13, 13, 0.62);
+        max-width: 600px;
+      }
+
+      /* ── COLLAB ── */
+      #collab {
+        background: var(--ink);
+        color: #fff;
+      }
+      #collab .section-label {
+        color: var(--mint);
+      }
+      #collab .section-desc {
+        color: rgba(255, 255, 255, 0.55);
+      }
+      .collab-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 3.5rem;
+      }
+      .collab-card {
+        border-radius: var(--card-radius);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.04);
+        padding: 2.2rem;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+        cursor: default;
+      }
+      .collab-card::before {
+        content: "";
+        position: absolute;
+        top: -60px;
+        right: -60px;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background: var(--card-glow, rgba(255,214,10,0.15));
+        filter: blur(50px);
+        pointer-events: none;
+      }
+      .collab-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
+        border-color: rgba(255, 255, 255, 0.22);
+      }
+      .collab-icon {
+        font-size: 2.6rem;
+        margin-bottom: 1.2rem;
+        display: block;
+      }
+      .collab-type {
+        font-family: "Space Mono", monospace;
+        font-size: 0.68rem;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        color: var(--card-accent, var(--sun));
+        margin-bottom: 0.6rem;
+      }
+      .collab-title {
+        font-family: "Fraunces", serif;
+        font-weight: 900;
+        font-size: 1.5rem;
+        margin-bottom: 0.9rem;
+        line-height: 1.15;
+      }
+      .collab-desc {
+        font-size: 0.93rem;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.58);
+        margin-bottom: 1.6rem;
+      }
+      .collab-traits {
+        display: flex;
+        flex-direction: column;
+        gap: 0.55rem;
+        margin-bottom: 1.8rem;
+      }
+      .collab-trait {
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        font-size: 0.87rem;
+        color: rgba(255,255,255,0.72);
+      }
+      .trait-mark {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: var(--card-accent, var(--sun));
+        color: var(--ink);
+        font-size: 0.65rem;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .collab-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.7rem 1.5rem;
+        border-radius: 50px;
+        font-weight: 900;
+        font-size: 0.85rem;
+        text-decoration: none;
+        border: 2px solid var(--card-accent, var(--sun));
+        color: var(--card-accent, var(--sun));
+        background: transparent;
+        transition: all 0.2s;
+        font-family: "Nunito", sans-serif;
+      }
+      .collab-cta:hover {
+        background: var(--card-accent, var(--sun));
+        color: var(--ink);
+        transform: translateY(-2px);
+      }
+      .collab-manifesto {
+        margin-top: 4.5rem;
+        border-top: 1px solid rgba(255,255,255,0.08);
+        padding-top: 3.5rem;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 3rem;
+        align-items: center;
+      }
+      .manifesto-label {
+        font-family: "Space Mono", monospace;
+        font-size: 0.68rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: rgba(255,255,255,0.3);
+        margin-bottom: 0.8rem;
+      }
+      .manifesto-headline {
+        font-family: "Fraunces", serif;
+        font-weight: 900;
+        font-size: clamp(1.8rem, 3vw, 2.6rem);
+        line-height: 1.1;
+        color: #fff;
+      }
+      .manifesto-headline em {
+        color: var(--sun);
+        font-style: italic;
+      }
+      .manifesto-body {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: rgba(255,255,255,0.6);
+      }
+      .manifesto-body strong {
+        color: #fff;
+        font-weight: 700;
+      }
+      @media (max-width: 768px) {
+        .collab-manifesto {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+      }
+
+      /* ────────────────────────────────────────
+       PRODUCTS — NEW EDITORIAL LIST FORMAT
+       inspired by TrueVoice screenshot
+    ──────────────────────────────────────── */
+      #products {
+        background: var(--cream);
+        position: relative;
+        overflow: hidden;
+      }
+      #products::before {
+        content: "";
+        position: absolute;
+        top: -100px;
+        right: -100px;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(
+          circle,
+          rgba(123, 47, 190, 0.06) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+      }
+
+      .products-intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: end;
+        margin-bottom: 5rem;
+      }
+      .expertise-pills {
+        display: flex;
+        gap: 0.7rem;
+        flex-wrap: wrap;
+      }
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.55rem 1.1rem;
+        border-radius: 50px;
+        font-size: 0.82rem;
+        font-weight: 700;
+        border: 2px solid var(--ink);
+      }
+      .pill-ai {
+        background: var(--purple);
+        color: #fff;
+        border-color: var(--purple);
+      }
+      .pill-bc {
+        background: var(--orange);
+        color: #fff;
+        border-color: var(--orange);
+      }
+      .pill-plat {
+        background: var(--ink);
+        color: var(--sun);
+      }
+
+      /* The list */
+      .products-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+
+      /* Each row */
+      .product-row {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        border-top: 2px solid rgba(13, 13, 13, 0.12);
+        padding: 2.5rem 0;
+        gap: 3rem;
+        transition: background 0.2s;
+        cursor: default;
+        position: relative;
+      }
+      .product-row:last-child {
+        border-bottom: 2px solid rgba(13, 13, 13, 0.12);
+      }
+      .product-row::before {
+        content: "";
+        position: absolute;
+        left: -2rem;
+        right: -2rem;
+        top: 0;
+        bottom: 0;
+        background: var(--row-hover, transparent);
+        z-index: 0;
+        transition: background 0.25s;
+        border-radius: 12px;
+      }
+      .product-row:hover::before {
+        background: rgba(13, 13, 13, 0.03);
+      }
+      .product-row > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      /* Left meta column */
+      .product-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        padding-top: 0.2rem;
+      }
+      .product-icon-wrap {
+        width: 56px;
+        height: 56px;
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        background: var(--icon-bg, rgba(13, 13, 13, 0.07));
+        border: 2px solid rgba(13, 13, 13, 0.1);
+        flex-shrink: 0;
+      }
+      .product-domain {
+        font-family: "Space Mono", monospace;
+        font-size: 0.68rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--domain-color, var(--purple));
+        font-weight: 700;
+      }
+      .product-status-row {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .status-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+      }
+      .status-dot.building {
+        background: var(--sun);
+        box-shadow: 0 0 0 3px rgba(255, 214, 10, 0.25);
+        animation: pulse 2s infinite;
+      }
+      .status-dot.planned {
+        background: rgba(13, 13, 13, 0.25);
+      }
+      .status-dot.live {
+        background: var(--mint);
+        box-shadow: 0 0 0 3px rgba(0, 196, 154, 0.25);
+        animation: pulse 2s infinite;
+      }
+      .status-label {
+        font-family: "Space Mono", monospace;
+        font-size: 0.68rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: rgba(13, 13, 13, 0.5);
+      }
+      .product-tags {
+        display: flex;
+        gap: 0.4rem;
+        flex-wrap: wrap;
+      }
+      .ptag {
+        font-family: "Space Mono", monospace;
+        font-size: 0.62rem;
+        padding: 3px 9px;
+        border-radius: 6px;
+        background: rgba(13, 13, 13, 0.07);
+        color: rgba(13, 13, 13, 0.65);
+        border: 1px solid rgba(13, 13, 13, 0.1);
+      }
+
+      /* Right content column */
+      .product-content {
+      }
+      .product-name {
+        font-family: "Fraunces", serif;
+        font-weight: 900;
+        font-size: clamp(1.5rem, 2.5vw, 2rem);
+        line-height: 1.1;
+        margin-bottom: 0.3rem;
+        color: var(--ink);
+      }
+      .product-tagline {
+        font-family: "Space Mono", monospace;
+        font-size: 0.78rem;
+        color: var(--domain-color, var(--purple));
+        margin-bottom: 1rem;
+        letter-spacing: 0.5px;
+      }
+      .product-problem {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        color: rgba(13, 13, 13, 0.7);
+        margin-bottom: 1.2rem;
+        border-left: 3px solid var(--domain-color, var(--purple));
+        padding-left: 1rem;
+        font-style: italic;
+      }
+      .product-body {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        color: rgba(13, 13, 13, 0.65);
+        margin-bottom: 1.4rem;
+      }
+      .product-bullets {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 1.4rem;
+      }
+      .product-bullet {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.7rem;
+        font-size: 0.9rem;
+        color: rgba(13, 13, 13, 0.7);
+        line-height: 1.5;
+      }
+      .bullet-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--domain-color, var(--purple));
+        flex-shrink: 0;
+        margin-top: 0.55rem;
+      }
+      .product-cta-row {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .product-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.65rem 1.4rem;
+        border-radius: 50px;
+        font-weight: 900;
+        font-size: 0.85rem;
+        text-decoration: none;
+        border: 2px solid var(--ink);
+        color: var(--ink);
+        background: transparent;
+        transition: all 0.2s;
+        font-family: "Nunito", sans-serif;
+      }
+      .product-cta:hover {
+        background: var(--ink);
+        color: var(--sun);
+        transform: translateY(-2px);
+      }
+      .product-cta.filled {
+        background: var(--ink);
+        color: var(--sun);
+      }
+      .product-cta.filled:hover {
+        background: var(--domain-color, var(--purple));
+        border-color: var(--domain-color, var(--purple));
+        color: #fff;
+      }
+
+      /* ── ABOUT ── */
+      #about {
+        background: var(--purple);
+        color: #fff;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 5rem;
+        align-items: center;
+      }
+      .about-emoji-stack {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+      .about-emoji-card {
+        aspect-ratio: 1;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+      .about-emoji-card span {
+        font-size: 0.78rem;
+        font-family: "Space Mono", monospace;
+        color: rgba(255, 255, 255, 0.6);
+        text-align: center;
+      }
+      .about-emoji-card:nth-child(1) {
+        background: rgba(255, 214, 10, 0.15);
+      }
+      .about-emoji-card:nth-child(2) {
+        background: rgba(76, 201, 240, 0.15);
+      }
+      .about-emoji-card:nth-child(3) {
+        background: rgba(0, 196, 154, 0.15);
+      }
+      .about-emoji-card:nth-child(4) {
+        background: rgba(255, 87, 87, 0.15);
+      }
+      .about-content .section-label {
+        color: var(--sun);
+      }
+      .about-content p {
+        font-size: 1.05rem;
+        line-height: 1.8;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 1.2rem;
+      }
+      .about-content strong {
+        color: var(--sun);
+      }
+
+      /* ── CONTACT ── */
+      #contact {
+        background: var(--cream);
+        max-width: 760px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .contact-form {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: left;
+      }
+      .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+      }
+      .form-group label {
+        font-weight: 700;
+        font-size: 0.82rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-family: "Space Mono", monospace;
+      }
+      .form-group input,
+      .form-group textarea,
+      .form-group select {
+        padding: 0.9rem 1.2rem;
+        border: 2.5px solid var(--ink);
+        border-radius: 12px;
+        font-family: "Nunito", sans-serif;
+        font-size: 1rem;
+        background: #fff;
+        outline: none;
+        transition:
+          border-color 0.2s,
+          box-shadow 0.2s;
+      }
+      .form-group input:focus,
+      .form-group textarea:focus,
+      .form-group select:focus {
+        border-color: var(--purple);
+        box-shadow: 0 0 0 4px rgba(123, 47, 190, 0.12);
+      }
+      .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+      }
+      .btn-submit {
+        padding: 1.1rem 2.5rem;
+        background: var(--ink);
+        color: var(--sun);
+        border: none;
+        border-radius: 50px;
+        font-family: "Fraunces", serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.2s;
+        align-self: center;
+        letter-spacing: -0.5px;
+      }
+      .btn-submit:hover {
+        background: var(--purple);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(123, 47, 190, 0.3);
+      }
+      .form-success {
+        display: none;
+        text-align: center;
+        padding: 2rem;
+        background: rgba(0, 196, 154, 0.1);
+        border: 2px solid var(--mint);
+        border-radius: var(--card-radius);
+      }
+      .form-success.show {
+        display: block;
+      }
+
+      /* ────────────────────────────────────────
+       FOOTER — REBUILT
+    ──────────────────────────────────────── */
+      footer {
+        background: var(--ink);
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .footer-top {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+        gap: 3rem;
+        padding: 4rem clamp(1.5rem, 5vw, 4rem) 3rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .footer-brand .logo {
+        color: #fff;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        display: inline-flex;
+      }
+      .footer-brand p {
+        font-size: 0.88rem;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.45);
+        max-width: 260px;
+        margin-bottom: 1.5rem;
+      }
+      .footer-socials {
+        display: flex;
+        gap: 0.7rem;
+      }
+      .social-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+        border: 1.5px solid rgba(255, 255, 255, 0.2);
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1rem;
+        text-decoration: none;
+        transition: all 0.2s;
+      }
+      .social-btn:hover {
+        border-color: var(--sun);
+        color: var(--sun);
+        background: rgba(255, 214, 10, 0.1);
+      }
+      .social-btn.ig:hover {
+        border-color: #e1306c;
+        color: #e1306c;
+        background: rgba(225, 48, 108, 0.1);
+      }
+
+      .footer-col h4 {
+        font-family: "Space Mono", monospace;
+        font-size: 0.68rem;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        color: rgba(255, 255, 255, 0.35);
+        margin-bottom: 1.2rem;
+      }
+      .footer-col ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+      .footer-col ul li a {
+        font-size: 0.88rem;
+        color: rgba(255, 255, 255, 0.55);
+        text-decoration: none;
+        transition: color 0.18s;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .footer-col ul li a:hover {
+        color: #fff;
+      }
+      .footer-col ul li a .link-dot {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.3);
+        flex-shrink: 0;
+      }
+      .footer-col ul li a:hover .link-dot {
+        background: var(--sun);
+      }
+
+      /* Status indicators in footer */
+      .footer-status {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-family: "Space Mono", monospace;
+        font-size: 0.62rem;
+        color: rgba(255, 255, 255, 0.3);
+        margin-left: auto;
+      }
+      .footer-status .dot {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+      }
+      .dot-building {
+        background: var(--sun);
+      }
+      .dot-planned {
+        background: rgba(255, 255, 255, 0.25);
+      }
+      .dot-live {
+        background: var(--mint);
+      }
+
+      .footer-bottom {
+        padding: 1.5rem clamp(1.5rem, 5vw, 4rem);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      .footer-bottom-left {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+      }
+      .footer-copy {
+        font-family: "Space Mono", monospace;
+        font-size: 0.68rem;
+        color: rgba(255, 255, 255, 0.28);
+      }
+      .footer-heart-line {
+        font-family: "Space Mono", monospace;
+        font-size: 0.68rem;
+        color: rgba(255, 255, 255, 0.28);
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+      .heart {
+        display: inline-block;
+        color: #ff4d6d;
+        font-style: normal;
+        font-size: 1rem;
+        animation: heartbeat 1.4s ease-in-out infinite;
+        filter: drop-shadow(0 0 8px rgba(255, 77, 109, 0.7));
+      }
+      @keyframes heartbeat {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        14% {
+          transform: scale(1.25);
+        }
+        28% {
+          transform: scale(1);
+        }
+        42% {
+          transform: scale(1.15);
+        }
+        70% {
+          transform: scale(1);
+        }
+      }
+      .coffee {
+        font-size: 0.9rem;
+      }
+      .footer-bottom-right {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .footer-badge {
+        font-family: "Space Mono", monospace;
+        font-size: 0.62rem;
+        padding: 0.3rem 0.8rem;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        color: rgba(255, 255, 255, 0.3);
+      }
+
+      /* ── RESPONSIVE ── */
+      @media (max-width: 900px) {
+        .product-row {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+        .product-meta {
+          flex-direction: row;
+          align-items: flex-start;
+          flex-wrap: wrap;
+          gap: 1rem;
+        }
+        .footer-top {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (max-width: 768px) {
+        .hero {
+          grid-template-columns: 1fr;
+          min-height: auto;
+        }
+        .hero-right {
+          min-height: 260px;
+        }
+        .products-intro {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+        #about {
+          grid-template-columns: 1fr;
+        }
+        .form-row {
+          grid-template-columns: 1fr;
+        }
+        .nav-links {
+          display: none;
+        }
+        .emoji-bubble {
+          width: 68px;
+          height: 68px;
+          font-size: 1.8rem;
+        }
+        .floating-emoji-grid {
+          gap: 1rem;
+        }
+        .footer-top {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* ── REVEAL ── */
+      .reveal {
+        opacity: 0;
+        transform: translateY(28px);
+        transition:
+          opacity 0.6s,
+          transform 0.6s;
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: none;
+      }
+      .collab-card,
+      .product-row {
+        opacity: 0;
+        transform: translateY(20px);
+        transition:
+          opacity 0.5s,
+          transform 0.5s,
+          box-shadow 0.3s,
+          border-color 0.3s;
+      }
+      .collab-card.visible,
+      .product-row.visible {
+        opacity: 1;
+        transform: none;
+      }
+      .collab-card:hover {
+        transform: translateY(-6px) !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <a href="#" class="logo">KushalBuilds <span class="logo-dot"></span></a>
+      <ul class="nav-links">
+        <li><a href="#collab">Collaborate</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <p class="hero-eyebrow">// Founder · AI Architect · Product Builder</p>
+        <h1 class="hero-headline">
+          Build.<br /><span>Ship.</span><br />Scale.
+        </h1>
+        <p class="hero-sub">
+          10+ years shipping AI systems, blockchain platforms, enterprise SaaS,
+          and cloud-native architectures. Currently building innovative AI and
+          blockchain products — and connecting with co-founders, marketers,
+          investors, and operators to create meaningful companies together.
+        </p>
+        <div class="hero-skills">
+          <span class="hero-skill">AI-Powered Products</span>
+          <span class="hero-skill">Cloud Architecture</span>
+          <span class="hero-skill">Blockchain &amp; Web3</span>
+          <span class="hero-skill">Concept → Production</span>
+          <span class="hero-skill">Engineering Leadership</span>
+        </div>
+        <div class="hero-ctas">
+          <a href="#collab" class="btn btn-primary">🤝 Build Together</a>
+          <a href="#products" class="btn btn-outline">⚡ See Products</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="floating-emoji-grid">
+          <div class="emoji-bubble" style="--dur: 3.2s; --delay: 0s">🚀</div>
+          <div class="emoji-bubble" style="--dur: 2.8s; --delay: 0.3s">🧠</div>
+          <div class="emoji-bubble" style="--dur: 3.5s; --delay: 0.6s">🤖</div>
+          <div class="emoji-bubble" style="--dur: 2.6s; --delay: 0.9s">🔗</div>
+          <div class="emoji-bubble" style="--dur: 3.1s; --delay: 0.2s">⚡</div>
+          <div class="emoji-bubble" style="--dur: 3.8s; --delay: 0.5s">🎯</div>
+          <div class="emoji-bubble" style="--dur: 2.9s; --delay: 0.7s">🤝</div>
+          <div class="emoji-bubble" style="--dur: 3.3s; --delay: 0.4s">💡</div>
+          <div class="emoji-bubble" style="--dur: 3s; --delay: 0.8s">✨</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLLABORATE -->
+    <section id="collab">
+      <div class="reveal">
+        <p class="section-label">// Build Together</p>
+        <h2 class="section-title">Who I want<br />to build with.</h2>
+        <p class="section-desc">
+          I have the technical depth to ship — AI systems, blockchain infrastructure,
+          full-stack products. What accelerates everything is the right people
+          around the table. Here's who I'm actively looking for.
+        </p>
+      </div>
+
+      <div class="collab-grid reveal">
+        <!-- Card 1: Technical Co-builders -->
+        <div class="collab-card" style="--card-glow: rgba(76,201,240,0.18); --card-accent: #4cc9f0">
+          <span class="collab-icon">⚡</span>
+          <p class="collab-type">Technical Co-builders</p>
+          <h3 class="collab-title">Engineers &amp; AI Builders</h3>
+          <p class="collab-desc">
+            People who can move fast, think in systems, and aren't afraid
+            to own a problem end-to-end. Stack matters less than mindset.
+          </p>
+          <div class="collab-traits">
+            <div class="collab-trait">
+              <div class="trait-mark">✓</div>
+              <span>Full-stack, mobile, or AI/ML background</span>
+            </div>
+            <div class="collab-trait">
+              <div class="trait-mark">✓</div>
+              <span>Comfortable going from whiteboard to production</span>
+            </div>
+            <div class="collab-trait">
+              <div class="trait-mark">✓</div>
+              <span>Motivated by shipping real products, not just side projects</span>
+            </div>
+            <div class="collab-trait">
+              <div class="trait-mark">✓</div>
+              <span>Open to equity-first or hybrid arrangements</span>
+            </div>
+          </div>
+          <a href="#contact" class="collab-cta">Let's build together →</a>
+        </div>
+
+        <!-- Card 2: Marketing & Growth -->
+        <div class="collab-card" style="--card-glow: rgba(255,214,10,0.18); --card-accent: var(--sun)">
+          <span class="collab-icon">📣</span>
+          <p class="collab-type">Marketing &amp; Growth</p>
+          <h3 class="collab-title">Marketers Who Get Products</h3>
+          <p class="collab-desc">
+            I can build the product. I need people who understand how to
+            get it in front of the right people — and who care as much
+            about the outcome as the campaign.
+          </p>
+          <div class="collab-traits">
+            <div class="collab-trait">
+              <div class="trait-mark">✓</div>
+              <span>Growth, content, community, or performance background</span>
+            </div>
+            <div class="collab-trait">
+              <div class="trait-mark">✓</div>
+              <span>Experience taking SaaS or B2B products to market</span>
+            </div>
+            <div class="collab-trait">
+              <div class="trait-mark">✓</div>
+              <span>Comfortable as an early co-builder, not just an executor</span>
+            </div>
+            <div class="collab-trait">
+              <div class="trait-mark">✓</div>
+              <span>Data-literate — knows what's working and why</span>
+            </div>
+          </div>
+          <a href="#contact" class="collab-cta">Let's grow together →</a>
+        </div>
+
+        <!-- Card 3: Domain Experts -->
+        <div class="collab-card" style="--card-glow: rgba(0,196,154,0.18); --card-accent: var(--mint)">
+          <span class="collab-icon">🎯</span>
+          <p class="collab-type">Domain Experts &amp; Operators</p>
+          <h3 class="collab-title">People Who Know the Problem</h3>
+          <p class="collab-desc">
+            The best products are built by people who've lived the problem.
+            If you're deep in a space and keep thinking "someone should
+            build this" — let's talk.
+          </p>
+          <div class="collab-traits">
+            <div class="collab-trait">
+              <div class="trait-mark">✓</div>
+              <span>Domain expertise in fintech, edtech, legal, or enterprise</span>
+            </div>
+            <div class="collab-trait">
+              <div class="trait-mark">✓</div>
+              <span>Strong network or channel access in your space</span>
+            </div>
+            <div class="collab-trait">
+              <div class="trait-mark">✓</div>
+              <span>A validated pain point — not just a hypothesis</span>
+            </div>
+            <div class="collab-trait">
+              <div class="trait-mark">✓</div>
+              <span>Ready to commit time, not just advise from the sidelines</span>
+            </div>
+          </div>
+          <a href="#contact" class="collab-cta">Bring your problem →</a>
+        </div>
+
+        <!-- Card 4: Investors -->
+        <div class="collab-card" style="--card-glow: rgba(255,107,157,0.18); --card-accent: var(--pink)">
+          <span class="collab-icon">💰</span>
+          <p class="collab-type">Investors &amp; Angels</p>
+          <h3 class="collab-title">Back Something Real</h3>
+          <p class="collab-desc">
+            These aren't pitch-deck dreams. They're production-grade products
+            with real architecture, real users in the pipeline, and a builder
+            who has shipped before. If you invest in technical founders, let's talk.
+          </p>
+          <div class="collab-traits">
+            <div class="collab-trait">
+              <div class="trait-mark">✓</div>
+              <span>Pre-seed or angel appetite — products at 0-to-1 stage</span>
+            </div>
+            <div class="collab-trait">
+              <div class="trait-mark">✓</div>
+              <span>Interest in AI, blockchain, B2B SaaS, or EdTech verticals</span>
+            </div>
+            <div class="collab-trait">
+              <div class="trait-mark">✓</div>
+              <span>Value-add beyond capital — network, GTM, or domain access</span>
+            </div>
+            <div class="collab-trait">
+              <div class="trait-mark">✓</div>
+              <span>Comfortable backing a solo technical founder pre-team</span>
+            </div>
+          </div>
+          <a href="#contact" class="collab-cta">Request a deck →</a>
+        </div>
+      </div>
+
+      <div class="collab-manifesto reveal">
+        <div>
+          <p class="manifesto-label">// My belief</p>
+          <h3 class="manifesto-headline">
+            Great products are a<br /><em>team sport.</em>
+          </h3>
+        </div>
+        <p class="manifesto-body">
+          I've spent years going deep on the technical side — AI architecture,
+          blockchain infrastructure, full-stack systems. I know what I'm good at,
+          and I know <strong>what I'm not</strong>. The most valuable thing I can do now
+          isn't build alone — it's find the right people and build <strong>faster, better,
+          and with more impact</strong> than any of us could solo. If that sounds like you,
+          I want to hear from you.
+        </p>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products">
+      <div class="products-intro">
+        <div class="reveal">
+          <p class="section-label">// Core Products</p>
+          <h2 class="section-title">Production<br />Software<br />0 → 1</h2>
+        </div>
+        <div class="reveal">
+          <p class="section-desc" style="margin-bottom: 1.5rem">
+            As a Founder and AI Architect, I design and ship production-grade AI
+            and blockchain systems — from first principles to live
+            infrastructure.
+          </p>
+          <div class="expertise-pills">
+            <span class="pill pill-ai">🤖 AI Systems</span>
+            <span class="pill pill-bc">🔗 Blockchain</span>
+            <span class="pill pill-plat">☁️ Platform</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="products-list reveal">
+        <!-- ── 1. StageMind AI ── -->
+        <div class="product-row">
+          <div class="product-meta">
+            <div
+              class="product-icon-wrap"
+              style="
+                --icon-bg: rgba(255, 214, 10, 0.12);
+                border-color: rgba(255, 214, 10, 0.3);
+              "
+            >
+              🎤
+            </div>
+            <div class="product-domain" style="--domain-color: var(--sun)">
+              AI · Public Speaking
+            </div>
+            <div class="product-status-row">
+              <div class="status-dot live"></div>
+              <span class="status-label">Live</span>
+            </div>
+            <div class="product-tags">
+              <span class="ptag">Web App</span>
+              <span class="ptag">AI Coaching</span>
+              <span class="ptag">Speech</span>
+            </div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-name">StageMind AI</h3>
+            <p class="product-tagline" style="--domain-color: var(--sun)">
+              Speak with confidence — every time you present
+            </p>
+            <p class="product-problem" style="border-color: var(--sun)">
+              Most people know their content cold but fall apart on delivery. Hiring a speaking coach costs hundreds per session. Generic tips don't work for your specific script, your audience, or your style.
+            </p>
+            <p class="product-body">
+              Paste your script, get a sentence-by-sentence coaching breakdown — delivery cues, gesture recommendations, pause placement, and emphasis suggestions tailored to your chosen style: Confident, Persuasive, or Storyteller.
+            </p>
+            <div class="product-bullets">
+              <div class="product-bullet">
+                <div class="bullet-dot" style="background: var(--sun)"></div>
+                <span>Script analysis with per-sentence delivery cues and body language guidance</span>
+              </div>
+              <div class="product-bullet">
+                <div class="bullet-dot" style="background: var(--sun)"></div>
+                <span>Three delivery modes — Confident, Persuasive, Storyteller — for any context</span>
+              </div>
+              <div class="product-bullet">
+                <div class="bullet-dot" style="background: var(--sun)"></div>
+                <span>Used by students, founders, and professionals preparing pitches, talks, and defences</span>
+              </div>
+            </div>
+            <div class="product-cta-row">
+              <a
+                href="https://stagemindai.netlify.app/"
+                target="_blank"
+                class="product-cta filled"
+                style="
+                  background: var(--sun);
+                  border-color: var(--sun);
+                  color: var(--ink);
+                "
+                >Try it now →</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 2. VoiceBridge ── -->
+        <div class="product-row">
+          <div class="product-meta">
+            <div
+              class="product-icon-wrap"
+              style="
+                --icon-bg: rgba(76, 201, 240, 0.12);
+                border-color: rgba(76, 201, 240, 0.25);
+              "
+            >
+              🎙️
+            </div>
+            <div class="product-domain" style="--domain-color: #4cc9f0">
+              AI · Communication
+            </div>
+            <div class="product-status-row">
+              <div class="status-dot building"></div>
+              <span class="status-label">Building</span>
+            </div>
+            <div class="product-tags">
+              <span class="ptag">Mobile App</span>
+              <span class="ptag">Real-time AI</span>
+              <span class="ptag">Voice</span>
+            </div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-name">VoiceBridge</h3>
+            <p class="product-tagline" style="--domain-color: #4cc9f0">
+              Real-time voice translation during live phone calls
+            </p>
+            <p class="product-problem" style="border-color: #4cc9f0">
+              You're in Germany. Your internet provider answers in German. You
+              speak English. Neither side understands the other — and no tool
+              today lets you just speak naturally and be heard in your language.
+            </p>
+            <p class="product-body">
+              A mobile app that acts as a transparent, real-time voice
+              interpreter during an actual phone call. Each person speaks
+              naturally; each hears the other in their own language. No manual
+              typing, no scheduling, no $3/min interpreter services.
+            </p>
+            <div class="product-bullets">
+              <div class="product-bullet">
+                <div class="bullet-dot" style="background: #4cc9f0"></div>
+                <span
+                  >Works with any phone call — no app required on the other
+                  end</span
+                >
+              </div>
+              <div class="product-bullet">
+                <div class="bullet-dot" style="background: #4cc9f0"></div>
+                <span
+                  >Sub-second latency — preserves natural conversation
+                  flow</span
+                >
+              </div>
+              <div class="product-bullet">
+                <div class="bullet-dot" style="background: #4cc9f0"></div>
+                <span
+                  >Replaces Language Line, Google Interpreter Mode, and manual
+                  copy-paste translation</span
+                >
+              </div>
+            </div>
+            <div class="product-cta-row">
+              <a
+                href="#contact"
+                class="product-cta filled"
+                style="
+                  background: #4cc9f0;
+                  border-color: #4cc9f0;
+                  color: var(--ink);
+                "
+                >Get early access →</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 3. AI Agent Provenance Ledger ── -->
+        <div class="product-row">
+          <div class="product-meta">
+            <div
+              class="product-icon-wrap"
+              style="
+                --icon-bg: rgba(123, 47, 190, 0.1);
+                border-color: rgba(123, 47, 190, 0.2);
+              "
+            >
+              🔐
+            </div>
+            <div class="product-domain" style="--domain-color: var(--purple)">
+              AI · Enterprise Governance
+            </div>
+            <div class="product-status-row">
+              <div class="status-dot planned"></div>
+              <span class="status-label">Planned</span>
+            </div>
+            <div class="product-tags">
+              <span class="ptag">B2B SaaS</span>
+              <span class="ptag">Blockchain</span>
+              <span class="ptag">Compliance</span>
+            </div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-name">Agent Provenance Ledger</h3>
+            <p class="product-tagline">
+              Tamper-proof audit trails for enterprise AI agents
+            </p>
+            <p class="product-problem">
+              Enterprises deploy AI agents that approve loans, execute trades,
+              send legal notices — but when something goes wrong, they have no
+              way to prove what the agent did, why, or who is responsible.
+              Regulators don't trust mutable server logs. Courts want signed
+              evidence.
+            </p>
+            <p class="product-body">
+              B2B infrastructure that makes AI agent actions legally provable to
+              parties outside your organization. Every tool call, model
+              invocation, and decision output is cryptographically signed with
+              the agent's DID and anchored to an immutable chain. Only hashes go
+              on-chain — raw data stays encrypted in your storage.
+            </p>
+            <div class="product-bullets">
+              <div class="product-bullet">
+                <div class="bullet-dot"></div>
+                <span
+                  >SDK drops into any Python/JS agent framework in under an
+                  hour</span
+                >
+              </div>
+              <div class="product-bullet">
+                <div class="bullet-dot"></div>
+                <span
+                  >Full decision reconstruction — every input, intermediate
+                  step, and model version</span
+                >
+              </div>
+              <div class="product-bullet">
+                <div class="bullet-dot"></div>
+                <span
+                  >Pre-formatted for EU AI Act Article 12, SOC2, and MiFID
+                  II</span
+                >
+              </div>
+              <div class="product-bullet">
+                <div class="bullet-dot"></div>
+                <span>Exportable as signed legal evidence packages</span>
+              </div>
+            </div>
+            <div class="product-cta-row">
+              <a href="#contact" class="product-cta filled">Request demo →</a>
+              <a href="#contact" class="product-cta">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 4. TrueVoice ── -->
+        <div class="product-row">
+          <div class="product-meta">
+            <div
+              class="product-icon-wrap"
+              style="
+                --icon-bg: rgba(0, 196, 154, 0.1);
+                border-color: rgba(0, 196, 154, 0.25);
+              "
+            >
+              ✍️
+            </div>
+            <div class="product-domain" style="--domain-color: var(--mint)">
+              Blockchain · Creator Tools
+            </div>
+            <div class="product-status-row">
+              <div class="status-dot planned"></div>
+              <span class="status-label">Planned</span>
+            </div>
+            <div class="product-tags">
+              <span class="ptag">B2C</span>
+              <span class="ptag">Browser Ext</span>
+              <span class="ptag">Auth</span>
+            </div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-name">TrueVoice</h3>
+            <p class="product-tagline" style="--domain-color: var(--mint)">
+              Prove your writing is human. Permanently.
+            </p>
+            <p class="product-problem">
+              AI can now produce content indistinguishable from human work.
+              Creators can't prove their work is theirs. A freelance copywriter
+              losing contracts. A student flagged 75% AI by Turnitin — with no
+              appeal. A journalist who can't verify a source document.
+            </p>
+            <p class="product-body">
+              Not an AI detector. A proof system. As you write, TrueVoice
+              captures cryptographic fingerprints at intervals — plus keystroke
+              cadence and revision patterns, the behavioral signature of a human
+              writing. Anchored on-chain. The certificate is yours permanently —
+              no company can revoke it, not even us.
+            </p>
+            <div class="product-bullets">
+              <div class="product-bullet">
+                <div class="bullet-dot" style="background: var(--mint)"></div>
+                <span
+                  >Behavioral biometrics — impossible to fake retroactively (AI
+                  generates 1,000 words in 3 seconds; humans take 45 minutes
+                  with pauses and restructuring)</span
+                >
+              </div>
+              <div class="product-bullet">
+                <div class="bullet-dot" style="background: var(--mint)"></div>
+                <span
+                  >One-click dispute package for university appeals, DMCA
+                  claims, and platform challenges</span
+                >
+              </div>
+              <div class="product-bullet">
+                <div class="bullet-dot" style="background: var(--mint)"></div>
+                <span
+                  >Creator-owned certificate — share a public verification link
+                  with editors or clients</span
+                >
+              </div>
+            </div>
+            <div class="product-cta-row">
+              <a
+                href="#contact"
+                class="product-cta filled"
+                style="
+                  background: var(--mint);
+                  border-color: var(--mint);
+                  color: var(--ink);
+                "
+                >Register interest →</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 5. ContextVault ── -->
+        <div class="product-row">
+          <div class="product-meta">
+            <div
+              class="product-icon-wrap"
+              style="
+                --icon-bg: rgba(255, 140, 66, 0.12);
+                border-color: rgba(255, 140, 66, 0.25);
+              "
+            >
+              🧩
+            </div>
+            <div class="product-domain" style="--domain-color: var(--orange)">
+              AI · Dev Tooling
+            </div>
+            <div class="product-status-row">
+              <div class="status-dot planned"></div>
+              <span class="status-label">Planned</span>
+            </div>
+            <div class="product-tags">
+              <span class="ptag">Dev Tool</span>
+              <span class="ptag">AI Memory</span>
+              <span class="ptag">SaaS</span>
+            </div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-name">ContextVault</h3>
+            <p class="product-tagline" style="--domain-color: var(--orange)">
+              Persistent, structured AI context across every session
+            </p>
+            <p class="product-problem">
+              Every time you start a new chat, you're the human API — manually
+              re-dumping everything you know about your project into a blank
+              conversation. AI has amnesia and you pay the tax. The older the
+              project, the worse it gets.
+            </p>
+            <p class="product-body">
+              Context should live somewhere persistent, structured, and
+              AI-readable — not inside a human's memory. ContextVault stores
+              your tech stack decisions, architecture rationale, what you
+              already tried, and how projects relate to each other. When you
+              open a new chat about any project, the AI already knows what it
+              needs to know — without you having to explain anything.
+            </p>
+            <div class="product-bullets">
+              <div class="product-bullet">
+                <div class="bullet-dot" style="background: var(--orange)"></div>
+                <span
+                  >Captures decisions across time, breadth (multiple projects),
+                  and depth (layered reasoning)</span
+                >
+              </div>
+              <div class="product-bullet">
+                <div class="bullet-dot" style="background: var(--orange)"></div>
+                <span
+                  >Exports structured context files that load into Claude,
+                  ChatGPT, or any AI tool instantly</span
+                >
+              </div>
+              <div class="product-bullet">
+                <div class="bullet-dot" style="background: var(--orange)"></div>
+                <span
+                  >Never re-explains your stack, your constraints, or why you
+                  ruled something out</span
+                >
+              </div>
+            </div>
+            <div class="product-cta-row">
+              <a
+                href="#contact"
+                class="product-cta filled"
+                style="
+                  background: var(--orange);
+                  border-color: var(--orange);
+                  color: #fff;
+                "
+                >Join waitlist →</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 6. Univally ── -->
+        <div class="product-row">
+          <div class="product-meta">
+            <div
+              class="product-icon-wrap"
+              style="
+                --icon-bg: rgba(255, 87, 87, 0.1);
+                border-color: rgba(255, 87, 87, 0.2);
+              "
+            >
+              🎓
+            </div>
+            <div class="product-domain" style="--domain-color: var(--coral)">
+              Blockchain · EdTech
+            </div>
+            <div class="product-status-row">
+              <div class="status-dot building"></div>
+              <span class="status-label">Building</span>
+            </div>
+            <div class="product-tags">
+              <span class="ptag">Hyperledger</span>
+              <span class="ptag">LLM Agents</span>
+              <span class="ptag">Azure</span>
+            </div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-name">Univally</h3>
+            <p class="product-tagline" style="--domain-color: var(--coral)">
+              AI-driven university matching &amp; verifiable credential platform
+            </p>
+            <p class="product-problem">
+              Students navigate fragmented admissions processes with no unified
+              profile. Universities manage applications across disconnected
+              systems. Credentials are slow, paper-based, and untrusted. Nobody
+              has a single source of truth — and regulators are demanding one.
+            </p>
+            <p class="product-body">
+              A cloud-native platform that digitises the entire student journey
+              — from discovery to admission, verification, and credential
+              lifecycle. Students get a unified digital wallet (academic
+              records, achievements, preferences). Universities manage
+              applications and offers through standardised workflows. Elina AI
+              guides students. Hyperledger Fabric handles tamper-proof records,
+              smart-contract admissions, and selective credential disclosure.
+            </p>
+            <div class="product-bullets">
+              <div class="product-bullet">
+                <div class="bullet-dot" style="background: var(--coral)"></div>
+                <span
+                  >Microservices architecture — Next.js, NestJS, CosmosDB, Azure
+                  Service Bus, Redis</span
+                >
+              </div>
+              <div class="product-bullet">
+                <div class="bullet-dot" style="background: var(--coral)"></div>
+                <span
+                  >Elina AI — LLM-powered assistant for guidance, document
+                  understanding, and decision support</span
+                >
+              </div>
+              <div class="product-bullet">
+                <div class="bullet-dot" style="background: var(--coral)"></div>
+                <span
+                  >Permissioned blockchain for audit trails, selective
+                  disclosure, and smart-contract automation</span
+                >
+              </div>
+            </div>
+            <div class="product-cta-row">
+              <a
+                href="#contact"
+                class="product-cta filled"
+                style="
+                  background: var(--coral);
+                  border-color: var(--coral);
+                  color: #fff;
+                "
+                >Learn more →</a
+              >
+              <a
+                href="#contact"
+                class="product-cta"
+                style="border-color: var(--coral); color: var(--coral)"
+                >University enquiries</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 7. Launchpad ── -->
+        <div class="product-row">
+          <div class="product-meta">
+            <div
+              class="product-icon-wrap"
+              style="
+                --icon-bg: rgba(255, 107, 157, 0.1);
+                border-color: rgba(255, 107, 157, 0.25);
+              "
+            >
+              🚀
+            </div>
+            <div class="product-domain" style="--domain-color: var(--pink)">
+              Platform · Dev Infra
+            </div>
+            <div class="product-status-row">
+              <div class="status-dot building"></div>
+              <span class="status-label">Building</span>
+            </div>
+            <div class="product-tags">
+              <span class="ptag">SaaS</span>
+              <span class="ptag">Analytics</span>
+              <span class="ptag">Forms</span>
+              <span class="ptag">Indie</span>
+            </div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-name">Launchpad</h3>
+            <p class="product-tagline" style="--domain-color: var(--pink)">
+              One dashboard to replace five tools for indie makers
+            </p>
+            <p class="product-problem">
+              Launching a landing page today means Plausible for analytics,
+              Formspark for forms, UptimeRobot for monitoring, Bitly for links,
+              and a GDPR consent tool — five accounts, five bills, none talking
+              to each other. Makers pay $27–50/mo for a worse solution than
+              they'd get from one coherent product.
+            </p>
+            <p class="product-body">
+              Launchpad is the Notion of launch infrastructure — analytics, form
+              handling, uptime monitoring, link management, and cookie consent
+              in one product. A form submission connects natively to the
+              analytics event that preceded it. A UTM link traces back to the
+              conversion. Built opinionated, fast to set up, and genuinely
+              enjoyable to use.
+            </p>
+            <div class="product-bullets">
+              <div class="product-bullet">
+                <div class="bullet-dot" style="background: var(--pink)"></div>
+                <span
+                  >Replaces Plausible + Formspark + UptimeRobot + Bitly +
+                  Cookiebot in one dashboard</span
+                >
+              </div>
+              <div class="product-bullet">
+                <div class="bullet-dot" style="background: var(--pink)"></div>
+                <span
+                  >Native data connections — form submissions link to the
+                  analytics events that drove them</span
+                >
+              </div>
+              <div class="product-bullet">
+                <div class="bullet-dot" style="background: var(--pink)"></div>
+                <span
+                  >Priced below what most users pay for just two of those tools
+                  individually</span
+                >
+              </div>
+            </div>
+            <div class="product-cta-row">
+              <a
+                href="#contact"
+                class="product-cta filled"
+                style="
+                  background: var(--pink);
+                  border-color: var(--pink);
+                  color: #fff;
+                "
+                >Join waitlist →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /products-list -->
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="about-emoji-stack reveal">
+        <div class="about-emoji-card">🤖 <span>AI Architect</span></div>
+        <div class="about-emoji-card">🔗 <span>Blockchain Dev</span></div>
+        <div class="about-emoji-card">🚀 <span>Product Builder</span></div>
+        <div class="about-emoji-card">🤝 <span>Co-builder</span></div>
+      </div>
+      <div class="about-content reveal">
+        <p class="section-label">// Who is Kushal?</p>
+        <h2 class="section-title" style="color: #fff; margin-bottom: 1.5rem">
+          Builder.<br />Architect.<br />Collaborator.
+        </h2>
+        <p>
+          I'm Kushal — a <strong>Founder and AI Architect</strong> who takes
+          products from first principles to live infrastructure. I design and
+          ship production AI and blockchain systems, and I care deeply about
+          architecture that lasts.
+        </p>
+        <p>
+          I'm not interested in building alone. The most exciting thing I can
+          do is find <strong>sharp, motivated people</strong> — technical
+          co-founders, growth operators, domain experts — and build something
+          meaningful together.
+        </p>
+        <p>
+          KushalBuilds is where ideas become real products — and where the
+          right collaborations start.
+        </p>
+        <a href="#contact" class="btn btn-primary" style="margin-top: 1rem"
+          >Let's build together →</a
+        >
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="reveal">
+        <p class="section-label" style="text-align: center">// Get in Touch</p>
+        <h2 class="section-title">Let's build<br />something.</h2>
+        <p class="section-desc" style="margin: 0 auto">
+          Whether you're a technical co-founder, a marketer looking to work
+          on a real product, a domain expert with a validated problem, or
+          just want to connect — reach out.
+        </p>
+      </div>
+      <form
+        class="contact-form reveal"
+        id="contact-form"
+        action="https://submit-form.com/vQbDImGOb"
+        method="POST"
+      >
+        <input type="hidden" name="_redirect" value="false" />
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@email.com"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="topic">I'm interested in...</label>
+          <select id="topic" name="topic">
+            <option value="">Choose a topic</option>
+            <option value="cofounder">Technical co-founder / co-builder</option>
+            <option value="marketing">Marketing &amp; growth collaboration</option>
+            <option value="domain">Domain expert / operator partnership</option>
+            <option value="investor">Investor / angel — backing a product</option>
+            <option value="stagemindai">StageMind AI — presentation coaching</option>
+            <option value="voicebridge">VoiceBridge — early access</option>
+            <option value="provenance">Agent Provenance Ledger — demo</option>
+            <option value="truevoice">TrueVoice — authorship proof</option>
+            <option value="contextvault">ContextVault — AI memory tool</option>
+            <option value="univally">Univally — student / university</option>
+            <option value="launchpad">Launchpad — maker infra</option>
+            <option value="architecture">AI Architecture consulting</option>
+            <option value="other">Something else</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Tell me more..."
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send it 🚀</button>
+      </form>
+      <div class="form-success" id="form-success">
+        <h3
+          style="
+            font-family: 'Fraunces', serif;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+          "
+        >
+          🎉 Message sent!
+        </h3>
+        <p>Thanks for reaching out — I'll get back to you soon.</p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-top">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#" class="logo"
+            >KushalBuilds <span class="logo-dot"></span
+          ></a>
+          <p>
+            Building production AI &amp; blockchain products from zero to one —
+            and finding the right people to build them with.
+          </p>
+          <div class="footer-socials">
+            <a
+              href="https://www.instagram.com/kushal.builds/"
+              target="_blank"
+              class="social-btn ig"
+              title="Instagram"
+              >📷</a
+            >
+            <a
+              href="https://www.linkedin.com/in/sethkushal/"
+              target="_blank"
+              class="social-btn"
+              title="LinkedIn"
+              >in</a
+            >
+            <a
+              href="https://x.com/KushalSeth14"
+              target="_blank"
+              class="social-btn"
+              title="X / Twitter"
+              >𝕏</a
+            >
+          </div>
+        </div>
+
+        <!-- Collaborate -->
+        <div class="footer-col">
+          <h4>Collaborate</h4>
+          <ul>
+            <li>
+              <a href="#collab"><span class="link-dot"></span>Technical Co-builders</a>
+            </li>
+            <li>
+              <a href="#collab"><span class="link-dot"></span>Marketers &amp; Growth</a>
+            </li>
+            <li>
+              <a href="#collab"><span class="link-dot"></span>Domain Experts</a>
+            </li>
+            <li>
+              <a href="#collab"><span class="link-dot"></span>Investors &amp; Angels</a>
+            </li>
+            <li>
+              <a href="#contact"><span class="link-dot"></span>Start a conversation</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Products -->
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li>
+              <a href="https://stagemindai.netlify.app/" target="_blank"
+                ><span class="link-dot"></span>StageMind AI
+                <span class="footer-status"
+                  ><span class="dot dot-live"></span>live</span
+                >
+              </a>
+            </li>
+            <li>
+              <a href="#products"
+                ><span class="link-dot"></span>VoiceBridge
+                <span class="footer-status"
+                  ><span class="dot dot-building"></span>building</span
+                >
+              </a>
+            </li>
+            <li>
+              <a href="#products"
+                ><span class="link-dot"></span>Agent Provenance
+                <span class="footer-status"
+                  ><span class="dot dot-planned"></span>planned</span
+                >
+              </a>
+            </li>
+            <li>
+              <a href="#products"
+                ><span class="link-dot"></span>TrueVoice
+                <span class="footer-status"
+                  ><span class="dot dot-planned"></span>planned</span
+                >
+              </a>
+            </li>
+            <li>
+              <a href="#products"
+                ><span class="link-dot"></span>ContextVault
+                <span class="footer-status"
+                  ><span class="dot dot-planned"></span>planned</span
+                >
+              </a>
+            </li>
+            <li>
+              <a href="#products"
+                ><span class="link-dot"></span>Univally
+                <span class="footer-status"
+                  ><span class="dot dot-building"></span>building</span
+                >
+              </a>
+            </li>
+            <li>
+              <a href="#products"
+                ><span class="link-dot"></span>Launchpad
+                <span class="footer-status"
+                  ><span class="dot dot-building"></span>building</span
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Connect -->
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li>
+              <a href="#about"><span class="link-dot"></span>About Kushal</a>
+            </li>
+            <li>
+              <a href="#contact"><span class="link-dot"></span>Get in touch</a>
+            </li>
+            <li>
+              <a href="#contact"><span class="link-dot"></span>Consulting</a>
+            </li>
+            <li>
+              <a href="#contact"><span class="link-dot"></span>Partnerships</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <span class="footer-copy"
+            >&copy; 2026 KushalBuilds. All rights reserved.</span
+          >
+          <span class="footer-heart-line">
+            Built with <em class="heart">♥</em> &amp; way too many late nights ☕
+          </span>
+        </div>
+        <div class="footer-bottom-right">
+          <span class="footer-badge">Founder · AI Architect · Co-builder</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Scroll reveal
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (!e.isIntersecting) return;
+            e.target.classList.add("visible");
+            e.target
+              .querySelectorAll(".collab-card,.product-row")
+              .forEach((c, i) => {
+                c.style.transitionDelay = `${i * 0.08}s`;
+                c.classList.add("visible");
+              });
+          });
+        },
+        { threshold: 0.07 },
+      );
+      document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+
+      // ── CLICK ANALYTICS ──
+      // Social icons
+      document.querySelectorAll(".social-btn").forEach((el) => {
+        el.addEventListener("click", () => {
+          if (window.plausible)
+            plausible("Social Click", { props: { platform: el.title } });
+        });
+      });
+
+      // Collab CTAs
+      document.querySelectorAll(".collab-cta").forEach((el) => {
+        el.addEventListener("click", () => {
+          const card = el.closest(".collab-card");
+          const type = card
+            ? card.querySelector(".collab-type")?.textContent
+            : "unknown";
+          if (window.plausible)
+            plausible("Collab CTA", { props: { type } });
+        });
+      });
+
+      // Product CTAs
+      document.querySelectorAll(".product-cta").forEach((el) => {
+        el.addEventListener("click", () => {
+          const row = el.closest(".product-row");
+          const product = row
+            ? row.querySelector(".product-name")?.textContent
+            : "unknown";
+          if (window.plausible)
+            plausible("Product CTA", {
+              props: { product, label: el.textContent.trim() },
+            });
+        });
+      });
+
+      // Formspark
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+          const form = e.target,
+            btn = form.querySelector(".btn-submit");
+          btn.textContent = "Sending…";
+          btn.disabled = true;
+          try {
+            const res = await fetch(form.action, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+              },
+              body: JSON.stringify(Object.fromEntries(new FormData(form))),
+            });
+            if (res.ok) {
+              form.style.display = "none";
+              document.getElementById("form-success").classList.add("show");
+              if (window.plausible)
+                plausible("Contact Submit", {
+                  props: { topic: form.topic.value },
+                });
+            } else throw new Error();
+          } catch {
+            btn.textContent = "Something went wrong — try again";
+            btn.disabled = false;
+          }
+        });
+    </script>
+  </body>
+</html>
