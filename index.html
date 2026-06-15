@@ -512,10 +512,10 @@
         }
       }
 
-      /* ────────────────────────────────────────
+      /* ══════════════════════════════════════
        PRODUCTS — NEW EDITORIAL LIST FORMAT
        inspired by TrueVoice screenshot
-    ──────────────────────────────────────── */
+    ══════════════════════════════════════ */
       #products {
         background: var(--cream);
         position: relative;
@@ -777,6 +777,179 @@
         color: #fff;
       }
 
+      /* ── READS ── */
+      #reads {
+        background: var(--cream);
+      }
+      #reads .section-label {
+        color: var(--purple);
+      }
+      .reads-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 20px;
+        border: 2px solid rgba(255,255,255,0.1);
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+        margin-top: 3rem;
+        cursor: pointer;
+        transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+        position: relative;
+      }
+      .reads-card:hover {
+        border-color: rgba(255,214,10,0.5);
+        transform: translateY(-5px);
+        box-shadow: 0 28px 64px rgba(0,0,0,0.5);
+      }
+      .reads-card-left {
+        background: linear-gradient(135deg, #0f1f45 0%, #1a3366 100%);
+        padding: clamp(2rem, 4vw, 3.5rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+        border-right: 1px solid rgba(255,255,255,0.08);
+      }
+      .reads-card-left::before {
+        content: '⚽';
+        position: absolute;
+        bottom: -30px;
+        right: -20px;
+        font-size: 140px;
+        opacity: 0.07;
+        pointer-events: none;
+        line-height: 1;
+      }
+      .reads-eyebrow {
+        font-family: 'Space Mono', monospace;
+        font-size: 0.68rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #c9922a;
+        margin-bottom: 1rem;
+      }
+      .reads-title {
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
+        font-size: clamp(1.8rem, 3vw, 2.8rem);
+        line-height: 1.1;
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+      .reads-title em {
+        color: var(--sun);
+        font-style: italic;
+      }
+      .reads-desc {
+        font-size: 0.92rem;
+        line-height: 1.7;
+        color: rgba(255,255,255,0.6);
+        margin-bottom: 2rem;
+        max-width: 380px;
+      }
+      .reads-pills {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .reads-pill {
+        font-family: 'Space Mono', monospace;
+        font-size: 0.62rem;
+        padding: 4px 10px;
+        border-radius: 99px;
+        border: 1px solid rgba(201,146,42,0.4);
+        color: #c9922a;
+        background: rgba(201,146,42,0.08);
+      }
+      .reads-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 2rem;
+        padding: 0.75rem 1.6rem;
+        border-radius: 50px;
+        background: var(--sun);
+        color: var(--ink);
+        font-weight: 900;
+        font-size: 0.9rem;
+        font-family: 'Nunito', sans-serif;
+        border: none;
+        transition: all 0.2s;
+        width: fit-content;
+      }
+      .reads-card:hover .reads-cta {
+        background: var(--ink);
+        color: var(--sun);
+        transform: translateX(4px);
+      }
+      .reads-card-right {
+        background: #fff;
+        padding: clamp(2rem, 4vw, 3.5rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 1.2rem;
+      }
+      .reads-stat-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+      .reads-stat {
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1rem 1.1rem;
+      }
+      .reads-stat-num {
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
+        font-size: 1.8rem;
+        color: var(--ink);
+        line-height: 1;
+        margin-bottom: 4px;
+      }
+      .reads-stat-label {
+        font-family: 'Space Mono', monospace;
+        font-size: 0.62rem;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: rgba(13,13,13,0.45);
+      }
+      .reads-topics {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .reads-topic {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.88rem;
+        color: rgba(13,13,13,0.65);
+        padding: 0.6rem 0.8rem;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        transition: background 0.2s;
+      }
+      .reads-card:hover .reads-topic {
+        background: var(--bg);
+      }
+      .reads-topic-icon {
+        font-size: 1.1rem;
+      }
+      @media (max-width: 768px) {
+        .reads-card {
+          grid-template-columns: 1fr;
+        }
+        .reads-card-left {
+          border-right: none;
+          border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+      }
+
       /* ── ABOUT ── */
       #about {
         background: var(--purple);
@@ -920,9 +1093,9 @@
         display: block;
       }
 
-      /* ────────────────────────────────────────
+      /* ══════════════════════════════════════
        FOOTER — REBUILT
-    ──────────────────────────────────────── */
+    ══════════════════════════════════════ */
       footer {
         background: var(--ink);
         padding: 0;
@@ -1199,6 +1372,7 @@
       <ul class="nav-links">
         <li><a href="#collab">Collaborate</a></li>
         <li><a href="#products">Products</a></li>
+        <li><a href="#reads">Reads</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -1220,7 +1394,7 @@
         <div class="hero-skills">
           <span class="hero-skill">AI-Powered Products</span>
           <span class="hero-skill">Cloud Architecture</span>
-          <span class="hero-skill">Blockchain &amp; Web3</span>
+          <span class="hero-skill">Blockchain & Web3</span>
           <span class="hero-skill">Concept → Production</span>
           <span class="hero-skill">Engineering Leadership</span>
         </div>
@@ -1238,10 +1412,66 @@
           <div class="emoji-bubble" style="--dur: 3.1s; --delay: 0.2s">⚡</div>
           <div class="emoji-bubble" style="--dur: 3.8s; --delay: 0.5s">🎯</div>
           <div class="emoji-bubble" style="--dur: 2.9s; --delay: 0.7s">🤝</div>
-          <div class="emoji-bubble" style="--dur: 3.3s; --delay: 0.4s">💡</div>
+          <div class="emoji-bubble" style="--dur: 3.3s; --delay: 0.4s">📈</div>
           <div class="emoji-bubble" style="--dur: 3s; --delay: 0.8s">✨</div>
         </div>
       </div>
+    </section>
+
+    <!-- READS & GUIDES -->
+    <section id="reads">
+      <div class="reveal">
+        <p class="section-label">// Reads & Guides</p>
+        <h2 class="section-title">Beyond<br/>the build.</h2>
+        <p class="section-desc">
+          Deep-dive guides on things I find fascinating — football, tech, sports analytics, culture.
+          Written to be actually useful, not just another listicle.
+        </p>
+      </div>
+
+      <a href="world_cup_2026_guide.html" class="reads-card reveal" target="_blank">
+        <div class="reads-card-left">
+          <div>
+            <p class="reads-eyebrow">// Guide · Football · Live Now · June 2026</p>
+            <h3 class="reads-title">Everything About the <em>2026 World Cup</em></h3>
+            <p class="reads-desc">
+              48 teams. 3 host nations. 1 trophy. Live group standings, all match results, full schedule, and group-by-group predictions — updated as the tournament unfolds.
+            </p>
+            <div class="reads-pills">
+              <span class="reads-pill">🇺🇸 USA · Mexico · Canada</span>
+              <span class="reads-pill">🔴 Live Now</span>
+              <span class="reads-pill">12 Groups · 104 Matches</span>
+            </div>
+          </div>
+          <div class="reads-cta">See live groups & results →</div>
+        </div>
+        <div class="reads-card-right">
+          <div class="reads-stat-row">
+            <div class="reads-stat">
+              <div class="reads-stat-num">12</div>
+              <div class="reads-stat-label">Groups A–L</div>
+            </div>
+            <div class="reads-stat">
+              <div class="reads-stat-num">15</div>
+              <div class="reads-stat-label">Matches played</div>
+            </div>
+            <div class="reads-stat">
+              <div class="reads-stat-num">48</div>
+              <div class="reads-stat-label">Teams competing</div>
+            </div>
+            <div class="reads-stat">
+              <div class="reads-stat-num">38</div>
+              <div class="reads-stat-label">Days of football</div>
+            </div>
+          </div>
+          <div class="reads-topics">
+            <div class="reads-topic"><span class="reads-topic-icon">📊</span> Live group standings — all 12 groups</div>
+            <div class="reads-topic"><span class="reads-topic-icon">⚽</span> Match results with scores (June 11–15)</div>
+            <div class="reads-topic"><span class="reads-topic-icon">🔮</span> Group-by-group predictions</div>
+            <div class="reads-topic"><span class="reads-topic-icon">🇮🇳</span> Indian-origin players & India's story</div>
+          </div>
+        </div>
+      </a>
     </section>
 
     <!-- COLLABORATE -->
@@ -1261,7 +1491,7 @@
         <div class="collab-card" style="--card-glow: rgba(76,201,240,0.18); --card-accent: #4cc9f0">
           <span class="collab-icon">⚡</span>
           <p class="collab-type">Technical Co-builders</p>
-          <h3 class="collab-title">Engineers &amp; AI Builders</h3>
+          <h3 class="collab-title">Engineers & AI Builders</h3>
           <p class="collab-desc">
             People who can move fast, think in systems, and aren't afraid
             to own a problem end-to-end. Stack matters less than mindset.
@@ -1289,8 +1519,8 @@
 
         <!-- Card 2: Marketing & Growth -->
         <div class="collab-card" style="--card-glow: rgba(255,214,10,0.18); --card-accent: var(--sun)">
-          <span class="collab-icon">📣</span>
-          <p class="collab-type">Marketing &amp; Growth</p>
+          <span class="collab-icon">📈</span>
+          <p class="collab-type">Marketing & Growth</p>
           <h3 class="collab-title">Marketers Who Get Products</h3>
           <p class="collab-desc">
             I can build the product. I need people who understand how to
@@ -1321,7 +1551,7 @@
         <!-- Card 3: Domain Experts -->
         <div class="collab-card" style="--card-glow: rgba(0,196,154,0.18); --card-accent: var(--mint)">
           <span class="collab-icon">🎯</span>
-          <p class="collab-type">Domain Experts &amp; Operators</p>
+          <p class="collab-type">Domain Experts & Operators</p>
           <h3 class="collab-title">People Who Know the Problem</h3>
           <p class="collab-desc">
             The best products are built by people who've lived the problem.
@@ -1352,7 +1582,7 @@
         <!-- Card 4: Investors -->
         <div class="collab-card" style="--card-glow: rgba(255,107,157,0.18); --card-accent: var(--pink)">
           <span class="collab-icon">💰</span>
-          <p class="collab-type">Investors &amp; Angels</p>
+          <p class="collab-type">Investors & Angels</p>
           <h3 class="collab-title">Back Something Real</h3>
           <p class="collab-desc">
             These aren't pitch-deck dreams. They're production-grade products
@@ -1415,7 +1645,7 @@
           <div class="expertise-pills">
             <span class="pill pill-ai">🤖 AI Systems</span>
             <span class="pill pill-bc">🔗 Blockchain</span>
-            <span class="pill pill-plat">☁️ Platform</span>
+            <span class="pill pill-plat">⚙️ Platform</span>
           </div>
         </div>
       </div>
@@ -1836,7 +2066,7 @@
           <div class="product-content">
             <h3 class="product-name">Univally</h3>
             <p class="product-tagline" style="--domain-color: var(--coral)">
-              AI-driven university matching &amp; verifiable credential platform
+              AI-driven university matching & verifiable credential platform
             </p>
             <p class="product-problem">
               Students navigate fragmented admissions processes with no unified
@@ -2064,7 +2294,7 @@
           <select id="topic" name="topic">
             <option value="">Choose a topic</option>
             <option value="cofounder">Technical co-founder / co-builder</option>
-            <option value="marketing">Marketing &amp; growth collaboration</option>
+            <option value="marketing">Marketing & growth collaboration</option>
             <option value="domain">Domain expert / operator partnership</option>
             <option value="investor">Investor / angel — backing a product</option>
             <option value="stagemindai">StageMind AI — presentation coaching</option>
@@ -2092,7 +2322,7 @@
       <div class="form-success" id="form-success">
         <h3
           style="
-            font-family: 'Fraunces', serif;
+            font-family: &quot;Fraunces&quot;, serif;
             font-size: 1.8rem;
             margin-bottom: 0.5rem;
           "
@@ -2112,7 +2342,7 @@
             >KushalBuilds <span class="logo-dot"></span
           ></a>
           <p>
-            Building production AI &amp; blockchain products from zero to one —
+            Building production AI & blockchain products from zero to one —
             and finding the right people to build them with.
           </p>
           <div class="footer-socials">
@@ -2121,7 +2351,7 @@
               target="_blank"
               class="social-btn ig"
               title="Instagram"
-              >📷</a
+              >◈</a
             >
             <a
               href="https://www.linkedin.com/in/sethkushal/"
@@ -2148,13 +2378,13 @@
               <a href="#collab"><span class="link-dot"></span>Technical Co-builders</a>
             </li>
             <li>
-              <a href="#collab"><span class="link-dot"></span>Marketers &amp; Growth</a>
+              <a href="#collab"><span class="link-dot"></span>Marketers & Growth</a>
             </li>
             <li>
               <a href="#collab"><span class="link-dot"></span>Domain Experts</a>
             </li>
             <li>
-              <a href="#collab"><span class="link-dot"></span>Investors &amp; Angels</a>
+              <a href="#collab"><span class="link-dot"></span>Investors & Angels</a>
             </li>
             <li>
               <a href="#contact"><span class="link-dot"></span>Start a conversation</a>
@@ -2230,6 +2460,9 @@
           <h4>Connect</h4>
           <ul>
             <li>
+              <a href="#reads"><span class="link-dot"></span>Reads & Guides</a>
+            </li>
+            <li>
               <a href="#about"><span class="link-dot"></span>About Kushal</a>
             </li>
             <li>
@@ -2248,10 +2481,11 @@
       <div class="footer-bottom">
         <div class="footer-bottom-left">
           <span class="footer-copy"
-            >&copy; 2026 KushalBuilds. All rights reserved.</span
+            >© 2026 KushalBuilds. All rights reserved.</span
           >
           <span class="footer-heart-line">
-            Built with <em class="heart">♥</em> &amp; way too many late nights ☕
+            Built with <em class="heart">♥</em> &amp; way too many late nights
+            &#x2615;
           </span>
         </div>
         <div class="footer-bottom-right">

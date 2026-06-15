@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIFA World Cup 2026 — Complete Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --green: #0f1f45;
+    --green-mid: #1a3166;
+    --green-light: #e8edf8;
+    --gold: #c9922a;
+    --gold-light: #fdf3de;
+    --red: #b83232;
+    --red-light: #fdecea;
+    --ink: #111827;
+    --ink-2: #374151;
+    --ink-3: #6b7280;
+    --border: #e2e5ec;
+    --bg: #f5f6fa;
+    --white: #ffffff;
+    --radius: 10px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--green);
+    padding: 0 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 56px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.22);
+    border-bottom: 2px solid var(--gold);
+  }
+  .nav-brand {
+    font-family: 'Playfair Display', serif;
+    color: #fff; font-size: 17px; font-weight: 700;
+    text-decoration: none; letter-spacing: 0.02em;
+  }
+  .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+  .nav-links a {
+    color: rgba(255,255,255,0.8); font-size: 13px;
+    text-decoration: none; transition: color 0.2s;
+  }
+  .nav-links a:hover { color: #fff; }
+
+  /* HERO */
+  .hero {
+    background: var(--green);
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem 3.5rem;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 4px solid var(--gold);
+  }
+  .hero::before {
+    content: '⚽';
+    position: absolute; top: -30px; left: 50%; transform: translateX(-50%);
+    font-size: 200px; opacity: 0.04; pointer-events: none;
+  }
+  .hero-eyebrow {
+    font-size: 12px; letter-spacing: 0.12em;
+    text-transform: uppercase; opacity: 0.7; margin-bottom: 0.75rem;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    line-height: 1.15; margin-bottom: 1rem;
+    color: #fff;
+  }
+  .hero-sub {
+    font-size: 16px; opacity: 0.8; max-width: 560px;
+    margin: 0 auto 2rem;
+  }
+  .hero-pills { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+  .hero-pill {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.25);
+    color: #fff; font-size: 12px;
+    padding: 5px 14px; border-radius: 99px;
+  }
+
+  /* LAYOUT */
+  .container { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
+
+  /* SECTION BLOCKS */
+  .section {
+    background: var(--white);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    margin: 2rem auto;
+    max-width: 860px;
+    overflow: hidden;
+  }
+  .section-header {
+    padding: 1.25rem 1.75rem 1rem;
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .section-icon {
+    width: 34px; height: 34px; border-radius: 8px;
+    background: var(--gold-light);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 17px; flex-shrink: 0;
+    border: 1px solid #f0d9a8;
+  }
+  .section-title {
+    font-size: 17px; font-weight: 600; color: var(--ink);
+  }
+  .section-body { padding: 1.5rem 1.75rem; }
+
+  /* STAT GRID */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px; margin-bottom: 1.5rem;
+  }
+  .stat-card {
+    background: var(--bg);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid var(--border);
+  }
+  .stat-num { font-size: 28px; font-weight: 600; color: var(--green); line-height: 1; margin-bottom: 4px; }
+  .stat-label { font-size: 12px; color: var(--ink-3); }
+
+  /* TABLES */
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th {
+    text-align: left; font-size: 11px; font-weight: 600;
+    letter-spacing: 0.07em; text-transform: uppercase;
+    color: var(--ink-3); padding: 0 0 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  th:not(:first-child) { text-align: center; }
+  td { padding: 11px 0; border-bottom: 1px solid var(--border); color: var(--ink-2); vertical-align: middle; }
+  td:not(:first-child) { text-align: center; color: var(--ink-3); }
+  tr:last-child td { border-bottom: none; }
+  .team-cell { display: flex; align-items: center; gap: 8px; }
+  .team-name { font-weight: 500; color: var(--ink); }
+  .flag { font-size: 18px; }
+
+  /* BADGES */
+  .badge {
+    display: inline-block; padding: 3px 10px;
+    border-radius: 99px; font-size: 11px; font-weight: 500;
+  }
+  .badge-green { background: var(--green-light); color: var(--green); }
+  .badge-red { background: var(--red-light); color: var(--red); }
+  .badge-gold { background: var(--gold-light); color: var(--gold); }
+  .badge-gray { background: #f0f0ee; color: var(--ink-3); }
+
+  .pos-dot {
+    width: 24px; height: 24px; border-radius: 50%;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 600; flex-shrink: 0;
+  }
+  .pos-1 { background: #d4edda; color: #155724; }
+  .pos-2 { background: #e2e3e5; color: #383d41; }
+  .pos-3 { background: #f8d7da; color: #721c24; }
+  .pos-4 { background: #f0f0ee; color: #6b6b6b; }
+
+  /* CONTINENT GRID */
+  .continent-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 14px;
+  }
+  .continent-card {
+    border: 1px solid var(--border); border-radius: 8px;
+    overflow: hidden;
+  }
+  .continent-header {
+    background: var(--green); color: #fff;
+    padding: 8px 14px; font-size: 13px; font-weight: 600;
+    display: flex; align-items: center; gap: 8px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .continent-slots {
+    background: rgba(255,255,255,0.2);
+    font-size: 11px; padding: 2px 8px; border-radius: 99px; margin-left: auto;
+  }
+  .continent-teams {
+    padding: 12px 14px; display: flex; flex-direction: column; gap: 6px;
+  }
+  .c-team { font-size: 13px; color: var(--ink-2); display: flex; align-items: center; gap: 6px; }
+  .c-flag { font-size: 15px; }
+  .debut-tag { font-size: 10px; background: var(--gold-light); color: var(--gold); padding: 1px 6px; border-radius: 99px; margin-left: auto; }
+
+  /* WINNER CARDS */
+  .winner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 12px;
+  }
+  .winner-card {
+    border: 1px solid var(--border); border-radius: 8px;
+    padding: 1rem; text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .winner-card.top {
+    border-color: var(--gold);
+    background: linear-gradient(135deg, #fffef9 0%, #fdf3de 100%);
+  }
+  .winner-flag { font-size: 32px; margin-bottom: 6px; display: block; }
+  .winner-country { font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
+  .winner-trophies { font-size: 22px; font-weight: 700; color: var(--gold); margin-bottom: 4px; }
+  .winner-years { font-size: 11px; color: var(--ink-3); line-height: 1.5; }
+
+  /* TIMELINE */
+  .timeline { display: flex; flex-direction: column; gap: 0; }
+  .tl-item {
+    display: flex; gap: 16px; align-items: flex-start;
+    padding: 12px 0; border-bottom: 1px solid var(--border);
+  }
+  .tl-item:last-child { border-bottom: none; }
+  .tl-year {
+    font-size: 14px; font-weight: 600; color: var(--gold);
+    min-width: 48px; padding-top: 1px;
+  }
+  .tl-winner { font-size: 14px; font-weight: 500; color: var(--ink); }
+  .tl-runner { font-size: 13px; color: var(--ink-3); }
+  .tl-score { font-size: 13px; color: var(--ink-3); margin-left: auto; white-space: nowrap; padding-top: 2px; }
+  .tl-host { font-size: 11px; color: var(--ink-3); }
+
+  /* PLAYER CARDS */
+  .player-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 12px;
+  }
+  .player-card {
+    border: 1px solid var(--border); border-radius: 8px; padding: 1rem;
+  }
+  .player-nat { font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
+  .player-name { font-size: 16px; font-weight: 600; color: var(--green); margin-bottom: 6px; }
+  .player-meta { font-size: 12px; color: var(--ink-3); line-height: 1.8; }
+  .player-root { font-size: 11px; background: #fff3e0; color: #e65100; padding: 2px 8px; border-radius: 99px; display: inline-block; margin-top: 6px; }
+
+  /* INDIA RANKING BARS */
+  .rank-bars { display: flex; gap: 10px; align-items: flex-end; height: 130px; margin: 1rem 0; }
+  .rbar-wrap { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 5px; }
+  .rbar-outer { width: 100%; display: flex; align-items: flex-end; justify-content: center; height: 100px; }
+  .rbar {
+    width: 100%; border-radius: 4px 4px 0 0;
+    display: flex; align-items: flex-start; justify-content: center;
+    padding-top: 5px;
+  }
+  .rbar-val { font-size: 11px; font-weight: 600; }
+  .rbar-good { background: #c0dd97; }
+  .rbar-good .rbar-val { color: #27500A; }
+  .rbar-bad { background: #f5c4b3; }
+  .rbar-bad .rbar-val { color: #712b13; }
+  .rbar-year { font-size: 11px; color: var(--ink-3); }
+
+  /* NEEDS LIST */
+  .needs { display: flex; flex-direction: column; gap: 10px; }
+  .need-item {
+    display: flex; gap: 12px; align-items: flex-start;
+    border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px;
+  }
+  .need-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+  .need-title { font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 2px; }
+  .need-desc { font-size: 13px; color: var(--ink-3); }
+
+  /* VERDICT */
+  .verdict-rows { display: flex; flex-direction: column; }
+  .verdict-row {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 14px;
+    gap: 12px;
+  }
+  .verdict-row:last-child { border-bottom: none; }
+  .verdict-label { color: var(--ink-3); }
+  .verdict-val { font-weight: 500; color: var(--ink); }
+
+  /* MATCH RESULTS */
+  .matches { display: flex; flex-direction: column; gap: 10px; }
+  .match {
+    display: flex; align-items: center; justify-content: space-between;
+    background: var(--bg); border-radius: 8px; padding: 12px 16px;
+    font-size: 14px; gap: 8px;
+  }
+  .match-teams { font-weight: 500; color: var(--ink); }
+  .match-score { font-size: 16px; font-weight: 600; min-width: 55px; text-align: center; }
+
+  /* CONTENDERS */
+  .contender-list { display: flex; flex-direction: column; gap: 0; }
+  .contender {
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 0; border-bottom: 1px solid var(--border);
+  }
+  .contender:last-child { border-bottom: none; }
+  .contender-rank { font-size: 13px; font-weight: 600; color: var(--ink-3); min-width: 20px; }
+  .contender-info { flex: 1; }
+  .contender-name { font-size: 14px; font-weight: 600; color: var(--ink); }
+  .contender-note { font-size: 12px; color: var(--ink-3); }
+  .contender-titles { font-size: 12px; color: var(--gold); font-weight: 600; }
+
+  /* FOOTER */
+  footer {
+    background: var(--green); color: rgba(255,255,255,0.65);
+    text-align: center; padding: 2rem 1.5rem; margin-top: 3rem;
+    font-size: 13px;
+    border-top: 3px solid var(--gold);
+  }
+  footer strong { color: #fff; }
+
+  @media (max-width: 600px) {
+    nav { padding: 0 1rem; }
+    .nav-links { display: none; }
+    .section-body { padding: 1.25rem; }
+    .section-header { padding: 1rem 1.25rem 0.75rem; }
+    .hero { padding: 3rem 1.25rem 2.5rem; }
+    .groups-grid { grid-template-columns: 1fr; }
+    .result-row { grid-template-columns: 1fr; gap: 4px; }
+    .result-home { justify-content: flex-start; }
+    .predictions-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ── BACK LINK ── */
+  .back-link { font-size: 12px; color: rgba(255,255,255,0.7); text-decoration: none; display: flex; align-items: center; gap: 5px; padding: 5px 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; transition: all 0.2s; white-space: nowrap; }
+  .back-link:hover { color: #fff; border-color: rgba(255,255,255,0.5); background: rgba(255,255,255,0.1); }
+
+  /* ── LIVE DOT ── */
+  .live-dot { width: 7px; height: 7px; border-radius: 50%; background: #e53935; display: inline-block; animation: livepulse 1.2s ease-in-out infinite; margin-right: 3px; vertical-align: middle; }
+  @keyframes livepulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+  /* ── GROUPS GRID ── */
+  .groups-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px,1fr)); gap: 14px; }
+  .group-card { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: var(--white); }
+  .group-card-header { background: var(--green); color: #fff; padding: 10px 14px; display: flex; align-items: center; gap: 10px; border-bottom: 2px solid var(--gold); }
+  .group-letter { font-size: 15px; font-weight: 700; font-family: 'Playfair Display', serif; letter-spacing: 0.02em; }
+  .group-played-text { font-size: 10px; color: rgba(255,255,255,0.5); }
+  .group-pred-badge { margin-left: auto; font-size: 10px; background: rgba(201,146,42,0.25); border: 1px solid rgba(201,146,42,0.5); color: var(--gold); padding: 2px 8px; border-radius: 99px; white-space: nowrap; }
+  .group-standings { width: 100%; border-collapse: collapse; }
+  .group-standings th { font-size: 9px; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-3); padding: 5px 8px 4px; text-align: center; font-weight: 600; border-bottom: 1px solid var(--border); }
+  .group-standings th:first-child { text-align: left; padding-left: 14px; }
+  .group-standings td { padding: 7px 8px; font-size: 12px; text-align: center; border-bottom: 1px solid var(--border); color: var(--ink-3); }
+  .group-standings tr:last-child td { border-bottom: none; }
+  .group-standings td:first-child { text-align: left; padding-left: 14px; }
+  .g-team-cell { display: flex; align-items: center; gap: 6px; }
+  .g-pos { width: 17px; height: 17px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 9px; font-weight: 700; flex-shrink: 0; }
+  .g-pos-1, .g-pos-2 { background: #c8e6c9; color: #1b5e20; }
+  .g-pos-3 { background: #fff9c4; color: #795548; }
+  .g-pos-4 { background: #f5f5f5; color: #9e9e9e; border: 1px solid #e0e0e0; }
+  .g-name { font-size: 12px; color: var(--ink); font-weight: 500; display: flex; align-items: center; gap: 4px; }
+  .g-host { font-size: 9px; background: var(--gold-light); color: var(--gold); padding: 1px 5px; border-radius: 4px; }
+  .pts-bold { font-weight: 700; color: var(--ink); }
+
+  /* ── RESULTS ── */
+  .results-day-block { margin-bottom: 1.75rem; }
+  .results-day-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; color: var(--green); background: var(--green-light); border-radius: 6px; padding: 5px 12px; display: inline-block; margin-bottom: 10px; }
+  .result-row { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 10px; padding: 10px 14px; background: var(--bg); border-radius: 8px; margin-bottom: 6px; border: 1px solid var(--border); font-size: 13px; }
+  .result-home { display: flex; align-items: center; justify-content: flex-end; gap: 6px; }
+  .result-away { display: flex; align-items: center; gap: 6px; }
+  .result-score-box { background: var(--white); border: 1.5px solid var(--border); border-radius: 6px; padding: 5px 10px; font-size: 15px; font-weight: 700; text-align: center; color: var(--ink); min-width: 62px; white-space: nowrap; }
+  .result-score-box.draw { color: var(--ink-2); }
+  .r-winner { font-weight: 700; color: var(--green); }
+  .r-loser { color: var(--ink-3); font-weight: 400; }
+  .r-draw { color: var(--ink-2); }
+  .r-tbd { background: var(--gold-light); border: 1.5px solid rgba(201,146,42,0.3); border-radius: 6px; padding: 5px 10px; font-size: 12px; font-weight: 600; color: var(--gold); min-width: 62px; text-align: center; white-space: nowrap; }
+
+  /* ── PREDICTIONS ── */
+  .predictions-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px,1fr)); gap: 12px; }
+  .pred-card { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--white); }
+  .pred-header { background: linear-gradient(135deg, var(--green) 0%, var(--green-mid) 100%); color: #fff; padding: 9px 14px; display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid var(--gold); }
+  .pred-group-label { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 700; }
+  .pred-conf { font-size: 10px; padding: 2px 7px; border-radius: 99px; font-weight: 600; }
+  .conf-high { background: rgba(0,196,100,0.25); color: #00c47a; }
+  .conf-med { background: rgba(201,146,42,0.25); color: var(--gold); }
+  .conf-low { background: rgba(200,200,200,0.18); color: rgba(255,255,255,0.6); }
+  .pred-teams { padding: 10px 14px; display: flex; flex-direction: column; gap: 5px; }
+  .pred-row { display: flex; align-items: center; gap: 8px; padding: 6px 9px; border-radius: 6px; font-size: 12px; font-weight: 500; color: var(--ink); }
+  .pred-row.w1 { background: rgba(0,196,100,0.08); border: 1px solid rgba(0,196,100,0.2); }
+  .pred-row.w2 { background: rgba(201,146,42,0.06); border: 1px solid rgba(201,146,42,0.15); }
+  .pred-row.out { background: var(--bg); border: 1px solid var(--border); color: var(--ink-3); font-weight: 400; }
+  .pred-pos { font-size: 10px; font-weight: 700; min-width: 24px; }
+  .pred-pos.p1 { color: #00c47a; }
+  .pred-pos.p2 { color: var(--gold); }
+  .pred-pos.pe { color: var(--ink-3); }
+  .pred-note-text { padding: 8px 14px; font-size: 11px; color: var(--ink-3); border-top: 1px solid var(--border); font-style: italic; line-height: 1.6; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="back-link" href="index.html">← KushalBuilds</a>
+  <a class="nav-brand" href="#">⚽ World Cup 2026</a>
+  <ul class="nav-links">
+    <li><a href="#groups">Groups</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#predictions">Picks</a></li>
+    <li><a href="#contenders">Contenders</a></li>
+    <li><a href="#india">India</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <p class="hero-eyebrow">FIFA World Cup 2026 — Complete Guide</p>
+  <h1>Everything About the<br>2026 World Cup</h1>
+  <p class="hero-sub">48 teams, 3 host nations, 1 trophy. A complete guide covering teams, history, contenders, Indian-origin players and India's road to qualification.</p>
+  <div class="hero-pills">
+    <span class="hero-pill">🇺🇸 🇲🇽 🇨🇦 USA · Mexico · Canada</span>
+    <span class="hero-pill">June 11 – July 19, 2026</span>
+    <span class="hero-pill">48 Teams</span>
+  </div>
+</div>
+
+<div style="padding: 0 1.5rem;">
+
+<!-- GROUPS WITH LIVE STANDINGS -->
+<div class="section" id="groups">
+  <div class="section-header">
+    <div class="section-icon">📊</div>
+    <div><div class="section-title">Group Stage — Live Standings</div></div>
+  </div>
+  <div class="section-body">
+    <p style="font-size:13px; color:var(--ink-3); margin-bottom:0.75rem;">
+      <span class="live-dot"></span>
+      <strong style="color:var(--ink);">Updated June 15, 2026 · Matchday 1.</strong> Top 2 from each group qualify. Best 8 third-place teams also advance to the Round of 32.
+    </p>
+    <div style="display:flex; gap:16px; flex-wrap:wrap; margin-bottom:1.25rem; font-size:11px; color:var(--ink-3);">
+      <span><span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#c8e6c9;vertical-align:middle;margin-right:4px;"></span>Qualifies (projected)</span>
+      <span><span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#fff9c4;border:1px solid #e0cc50;vertical-align:middle;margin-right:4px;"></span>Best 3rd (possible)</span>
+      <span><span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#f5f5f5;border:1px solid #ddd;vertical-align:middle;margin-right:4px;"></span>Eliminated</span>
+    </div>
+    <div class="groups-grid">
+
+      <!-- GROUP A -->
+      <div class="group-card">
+        <div class="group-card-header"><span class="group-letter">Group A</span><span class="group-played-text">2/6 played</span><span class="group-pred-badge">🏆 Mexico</span></div>
+        <table class="group-standings">
+          <thead><tr><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>Pts</th></tr></thead>
+          <tbody>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-1">1</span><span>🇲🇽</span><span class="g-name">Mexico <span class="g-host">H</span></span></div></td><td>1</td><td>1</td><td>0</td><td>0</td><td>+2</td><td class="pts-bold">3</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-2">2</span><span>🇰🇷</span><span class="g-name">South Korea</span></div></td><td>1</td><td>1</td><td>0</td><td>0</td><td>+1</td><td class="pts-bold">3</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-3">3</span><span>🇨🇿</span><span class="g-name">Czechia</span></div></td><td>1</td><td>0</td><td>0</td><td>1</td><td>-1</td><td class="pts-bold">0</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-4">4</span><span>🇿🇦</span><span class="g-name">South Africa</span></div></td><td>1</td><td>0</td><td>0</td><td>1</td><td>-2</td><td class="pts-bold">0</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- GROUP B -->
+      <div class="group-card">
+        <div class="group-card-header"><span class="group-letter">Group B</span><span class="group-played-text">2/6 played</span><span class="group-pred-badge">🏆 Switzerland</span></div>
+        <table class="group-standings">
+          <thead><tr><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>Pts</th></tr></thead>
+          <tbody>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-1">1</span><span>🇨🇦</span><span class="g-name">Canada <span class="g-host">H</span></span></div></td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td class="pts-bold">1</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-2">2</span><span>🇨🇭</span><span class="g-name">Switzerland</span></div></td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td class="pts-bold">1</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-3">3</span><span>🇶🇦</span><span class="g-name">Qatar</span></div></td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td class="pts-bold">1</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-4">4</span><span>🇧🇦</span><span class="g-name">Bosnia &amp; Herz.</span></div></td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td class="pts-bold">1</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- GROUP C -->
+      <div class="group-card">
+        <div class="group-card-header"><span class="group-letter">Group C</span><span class="group-played-text">2/6 played</span><span class="group-pred-badge">🏆 Brazil</span></div>
+        <table class="group-standings">
+          <thead><tr><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>Pts</th></tr></thead>
+          <tbody>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-1">1</span><span>🏴󠁧󠁢󠁳󠁣󠁴󠁿</span><span class="g-name">Scotland</span></div></td><td>1</td><td>1</td><td>0</td><td>0</td><td>+1</td><td class="pts-bold">3</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-2">2</span><span>🇧🇷</span><span class="g-name">Brazil</span></div></td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td class="pts-bold">1</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-3">3</span><span>🇲🇦</span><span class="g-name">Morocco</span></div></td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td class="pts-bold">1</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-4">4</span><span>🇭🇹</span><span class="g-name">Haiti</span></div></td><td>1</td><td>0</td><td>0</td><td>1</td><td>-1</td><td class="pts-bold">0</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- GROUP D -->
+      <div class="group-card">
+        <div class="group-card-header"><span class="group-letter">Group D</span><span class="group-played-text">2/6 played</span><span class="group-pred-badge">🏆 USA</span></div>
+        <table class="group-standings">
+          <thead><tr><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>Pts</th></tr></thead>
+          <tbody>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-1">1</span><span>🇺🇸</span><span class="g-name">USA <span class="g-host">H</span></span></div></td><td>1</td><td>1</td><td>0</td><td>0</td><td>+3</td><td class="pts-bold">3</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-2">2</span><span>🇦🇺</span><span class="g-name">Australia</span></div></td><td>1</td><td>1</td><td>0</td><td>0</td><td>+2</td><td class="pts-bold">3</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-3">3</span><span>🇹🇷</span><span class="g-name">Türkiye</span></div></td><td>1</td><td>0</td><td>0</td><td>1</td><td>-2</td><td class="pts-bold">0</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-4">4</span><span>🇵🇾</span><span class="g-name">Paraguay</span></div></td><td>1</td><td>0</td><td>0</td><td>1</td><td>-3</td><td class="pts-bold">0</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- GROUP E -->
+      <div class="group-card">
+        <div class="group-card-header"><span class="group-letter">Group E</span><span class="group-played-text">2/6 played</span><span class="group-pred-badge">🏆 Germany</span></div>
+        <table class="group-standings">
+          <thead><tr><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>Pts</th></tr></thead>
+          <tbody>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-1">1</span><span>🇩🇪</span><span class="g-name">Germany</span></div></td><td>1</td><td>1</td><td>0</td><td>0</td><td>+6</td><td class="pts-bold">3</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-2">2</span><span>🇨🇮</span><span class="g-name">Ivory Coast</span></div></td><td>1</td><td>1</td><td>0</td><td>0</td><td>+1</td><td class="pts-bold">3</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-3">3</span><span>🇪🇨</span><span class="g-name">Ecuador</span></div></td><td>1</td><td>0</td><td>0</td><td>1</td><td>-1</td><td class="pts-bold">0</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-4">4</span><span>🇨🇼</span><span class="g-name">Curaçao</span></div></td><td>1</td><td>0</td><td>0</td><td>1</td><td>-6</td><td class="pts-bold">0</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- GROUP F -->
+      <div class="group-card">
+        <div class="group-card-header"><span class="group-letter">Group F</span><span class="group-played-text">1/6 played</span><span class="group-pred-badge">🏆 Netherlands</span></div>
+        <table class="group-standings">
+          <thead><tr><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>Pts</th></tr></thead>
+          <tbody>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-1">1</span><span>🇳🇱</span><span class="g-name">Netherlands</span></div></td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td class="pts-bold">1</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-2">2</span><span>🇯🇵</span><span class="g-name">Japan</span></div></td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td class="pts-bold">1</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-3">3</span><span>🇸🇪</span><span class="g-name">Sweden</span></div></td><td>0</td><td colspan="4" style="text-align:left;color:var(--gold);font-size:11px;">Playing today</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-4">4</span><span>🇹🇳</span><span class="g-name">Tunisia</span></div></td><td>0</td><td colspan="4" style="text-align:left;color:var(--gold);font-size:11px;">Playing today</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- GROUP G -->
+      <div class="group-card">
+        <div class="group-card-header"><span class="group-letter">Group G</span><span class="group-played-text"><span class="live-dot"></span>Playing today</span><span class="group-pred-badge">🏆 Belgium</span></div>
+        <table class="group-standings">
+          <thead><tr><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>Pts</th></tr></thead>
+          <tbody>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-1">1</span><span>🇧🇪</span><span class="g-name">Belgium</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-2">2</span><span>🇮🇷</span><span class="g-name">Iran</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-3">3</span><span>🇪🇬</span><span class="g-name">Egypt</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-4">4</span><span>🇳🇿</span><span class="g-name">New Zealand</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- GROUP H -->
+      <div class="group-card">
+        <div class="group-card-header"><span class="group-letter">Group H</span><span class="group-played-text"><span class="live-dot"></span>Playing today</span><span class="group-pred-badge">🏆 Spain</span></div>
+        <table class="group-standings">
+          <thead><tr><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>Pts</th></tr></thead>
+          <tbody>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-1">1</span><span>🇪🇸</span><span class="g-name">Spain</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-2">2</span><span>🇺🇾</span><span class="g-name">Uruguay</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-3">3</span><span>🇸🇦</span><span class="g-name">Saudi Arabia</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-4">4</span><span>🇨🇻</span><span class="g-name">Cape Verde</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- GROUP I -->
+      <div class="group-card">
+        <div class="group-card-header"><span class="group-letter">Group I</span><span class="group-played-text">From June 16</span><span class="group-pred-badge">🏆 France</span></div>
+        <table class="group-standings">
+          <thead><tr><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>Pts</th></tr></thead>
+          <tbody>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-1">1</span><span>🇫🇷</span><span class="g-name">France</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-2">2</span><span>🇸🇳</span><span class="g-name">Senegal</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-3">3</span><span>🇳🇴</span><span class="g-name">Norway</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-4">4</span><span>🇮🇶</span><span class="g-name">Iraq</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- GROUP J -->
+      <div class="group-card">
+        <div class="group-card-header"><span class="group-letter">Group J</span><span class="group-played-text">From June 16</span><span class="group-pred-badge">🏆 Argentina</span></div>
+        <table class="group-standings">
+          <thead><tr><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>Pts</th></tr></thead>
+          <tbody>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-1">1</span><span>🇦🇷</span><span class="g-name">Argentina</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-2">2</span><span>🇦🇹</span><span class="g-name">Austria</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-3">3</span><span>🇩🇿</span><span class="g-name">Algeria</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-4">4</span><span>🇯🇴</span><span class="g-name">Jordan</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- GROUP K -->
+      <div class="group-card">
+        <div class="group-card-header"><span class="group-letter">Group K</span><span class="group-played-text">From June 16</span><span class="group-pred-badge">🏆 Portugal</span></div>
+        <table class="group-standings">
+          <thead><tr><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>Pts</th></tr></thead>
+          <tbody>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-1">1</span><span>🇵🇹</span><span class="g-name">Portugal</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-2">2</span><span>🇨🇴</span><span class="g-name">Colombia</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-3">3</span><span>🇺🇿</span><span class="g-name">Uzbekistan</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-4">4</span><span>🇨🇩</span><span class="g-name">DR Congo</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- GROUP L -->
+      <div class="group-card">
+        <div class="group-card-header"><span class="group-letter">Group L</span><span class="group-played-text">From June 16</span><span class="group-pred-badge">🏆 England</span></div>
+        <table class="group-standings">
+          <thead><tr><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>Pts</th></tr></thead>
+          <tbody>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-1">1</span><span>🏴󠁧󠁢󠁥󠁮󠁧󠁿</span><span class="g-name">England</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-2">2</span><span>🇭🇷</span><span class="g-name">Croatia</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-3">3</span><span>🇬🇭</span><span class="g-name">Ghana</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+            <tr><td><div class="g-team-cell"><span class="g-pos g-pos-4">4</span><span>🇵🇦</span><span class="g-name">Panama</span></div></td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="pts-bold">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MATCH RESULTS -->
+<div class="section" id="results">
+  <div class="section-header">
+    <div class="section-icon">⚽</div>
+    <div><div class="section-title">Match Results — Matchday 1</div></div>
+  </div>
+  <div class="section-body">
+    <p style="font-size:13px; color:var(--ink-3); margin-bottom:1.25rem;">Confirmed results from June 11–14. June 15 matches marked as TBD — check back for updates.</p>
+
+    <div class="results-day-block">
+      <span class="results-day-label">Thu · June 11 · Group A</span>
+      <div class="result-row">
+        <div class="result-home"><span>🇲🇽</span><span class="r-winner">Mexico</span></div>
+        <div class="result-score-box">2 – 0</div>
+        <div class="result-away"><span class="r-loser">South Africa</span><span>🇿🇦</span></div>
+      </div>
+      <div class="result-row">
+        <div class="result-home"><span>🇰🇷</span><span class="r-winner">South Korea</span></div>
+        <div class="result-score-box">2 – 1</div>
+        <div class="result-away"><span class="r-loser">Czechia</span><span>🇨🇿</span></div>
+      </div>
+    </div>
+
+    <div class="results-day-block">
+      <span class="results-day-label">Fri · June 12 · Groups B &amp; D</span>
+      <div class="result-row">
+        <div class="result-home"><span>🇨🇦</span><span class="r-draw">Canada</span></div>
+        <div class="result-score-box draw">1 – 1</div>
+        <div class="result-away"><span class="r-draw">Bosnia &amp; Herz.</span><span>🇧🇦</span></div>
+      </div>
+      <div class="result-row">
+        <div class="result-home"><span>🇺🇸</span><span class="r-winner">USA</span></div>
+        <div class="result-score-box">4 – 1</div>
+        <div class="result-away"><span class="r-loser">Paraguay</span><span>🇵🇾</span></div>
+      </div>
+    </div>
+
+    <div class="results-day-block">
+      <span class="results-day-label">Sat · June 13 · Groups B &amp; C</span>
+      <div class="result-row">
+        <div class="result-home"><span>🇶🇦</span><span class="r-draw">Qatar</span></div>
+        <div class="result-score-box draw">1 – 1</div>
+        <div class="result-away"><span class="r-draw">Switzerland</span><span>🇨🇭</span></div>
+      </div>
+      <div class="result-row">
+        <div class="result-home"><span>🇧🇷</span><span class="r-draw">Brazil</span></div>
+        <div class="result-score-box draw">1 – 1</div>
+        <div class="result-away"><span class="r-draw">Morocco</span><span>🇲🇦</span></div>
+      </div>
+    </div>
+
+    <div class="results-day-block">
+      <span class="results-day-label">Sun · June 14 · Groups C, D, E &amp; F</span>
+      <div class="result-row">
+        <div class="result-home"><span>🏴󠁧󠁢󠁳󠁣󠁴󠁿</span><span class="r-winner">Scotland</span></div>
+        <div class="result-score-box">1 – 0</div>
+        <div class="result-away"><span class="r-loser">Haiti</span><span>🇭🇹</span></div>
+      </div>
+      <div class="result-row">
+        <div class="result-home"><span>🇦🇺</span><span class="r-winner">Australia</span></div>
+        <div class="result-score-box">2 – 0</div>
+        <div class="result-away"><span class="r-loser">Türkiye</span><span>🇹🇷</span></div>
+      </div>
+      <div class="result-row">
+        <div class="result-home"><span>🇩🇪</span><span class="r-winner">Germany</span></div>
+        <div class="result-score-box">7 – 1</div>
+        <div class="result-away"><span class="r-loser">Curaçao</span><span>🇨🇼</span></div>
+      </div>
+      <div class="result-row">
+        <div class="result-home"><span>🇨🇮</span><span class="r-winner">Ivory Coast</span></div>
+        <div class="result-score-box">1 – 0</div>
+        <div class="result-away"><span class="r-loser">Ecuador</span><span>🇪🇨</span></div>
+      </div>
+      <div class="result-row">
+        <div class="result-home"><span>🇳🇱</span><span class="r-draw">Netherlands</span></div>
+        <div class="result-score-box draw">2 – 2</div>
+        <div class="result-away"><span class="r-draw">Japan</span><span>🇯🇵</span></div>
+      </div>
+    </div>
+
+    <div class="results-day-block">
+      <span class="results-day-label"><span class="live-dot"></span>Mon · June 15 · Groups F, G &amp; H — in progress</span>
+      <div class="result-row">
+        <div class="result-home"><span>🇸🇪</span><span class="r-draw">Sweden</span></div>
+        <div class="r-tbd">TBD</div>
+        <div class="result-away"><span class="r-draw">Tunisia</span><span>🇹🇳</span></div>
+      </div>
+      <div class="result-row">
+        <div class="result-home"><span>🇪🇸</span><span class="r-draw">Spain</span></div>
+        <div class="r-tbd">TBD</div>
+        <div class="result-away"><span class="r-draw">Cape Verde</span><span>🇨🇻</span></div>
+      </div>
+      <div class="result-row">
+        <div class="result-home"><span>🇧🇪</span><span class="r-draw">Belgium</span></div>
+        <div class="r-tbd">TBD</div>
+        <div class="result-away"><span class="r-draw">Egypt</span><span>🇪🇬</span></div>
+      </div>
+      <div class="result-row">
+        <div class="result-home"><span>🇸🇦</span><span class="r-draw">Saudi Arabia</span></div>
+        <div class="r-tbd">TBD</div>
+        <div class="result-away"><span class="r-draw">Uruguay</span><span>🇺🇾</span></div>
+      </div>
+      <div class="result-row">
+        <div class="result-home"><span>🇮🇷</span><span class="r-draw">Iran</span></div>
+        <div class="r-tbd">TBD</div>
+        <div class="result-away"><span class="r-draw">New Zealand</span><span>🇳🇿</span></div>
+      </div>
+    </div>
+    <p style="font-size:12px; color:var(--ink-3); margin-top:0.5rem; font-style:italic;">Groups I–L (France, Argentina, Portugal, England) begin June 16. Page data captured June 15, 2026.</p>
+  </div>
+</div>
+
+<!-- PREDICTIONS -->
+<div class="section" id="predictions">
+  <div class="section-header">
+    <div class="section-icon">🔮</div>
+    <div><div class="section-title">Group Stage Predictions — All 12 Groups</div></div>
+  </div>
+  <div class="section-body">
+    <p style="font-size:13px; color:var(--ink-3); margin-bottom:1.25rem;">Predicted top 2 qualifiers from each group — based on squad quality, FIFA rankings, MD1 results, and tournament experience. Confidence reflects how clear-cut the group is.</p>
+    <div class="predictions-grid">
+
+      <div class="pred-card">
+        <div class="pred-header"><span class="pred-group-label">Group A</span><span class="pred-conf conf-high">High confidence</span></div>
+        <div class="pred-teams">
+          <div class="pred-row w1"><span class="pred-pos p1">1st</span><span>🇲🇽</span> Mexico</div>
+          <div class="pred-row w2"><span class="pred-pos p2">2nd</span><span>🇰🇷</span> South Korea</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇨🇿</span> Czechia</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇿🇦</span> South Africa</div>
+        </div>
+        <div class="pred-note-text">Mexico dominant at home. South Korea proved their class beating Czechia 2-1 from behind.</div>
+      </div>
+
+      <div class="pred-card">
+        <div class="pred-header"><span class="pred-group-label">Group B</span><span class="pred-conf conf-low">Wide open</span></div>
+        <div class="pred-teams">
+          <div class="pred-row w1"><span class="pred-pos p1">1st</span><span>🇨🇭</span> Switzerland</div>
+          <div class="pred-row w2"><span class="pred-pos p2">2nd</span><span>🇨🇦</span> Canada</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇶🇦</span> Qatar</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇧🇦</span> Bosnia &amp; Herz.</div>
+        </div>
+        <div class="pred-note-text">All 4 on 1pt after MD1 — tightest group in the tournament. Switzerland edge it on experience.</div>
+      </div>
+
+      <div class="pred-card">
+        <div class="pred-header"><span class="pred-group-label">Group C</span><span class="pred-conf conf-med">Medium</span></div>
+        <div class="pred-teams">
+          <div class="pred-row w1"><span class="pred-pos p1">1st</span><span>🇧🇷</span> Brazil</div>
+          <div class="pred-row w2"><span class="pred-pos p2">2nd</span><span>🏴󠁧󠁢󠁳󠁣󠁴󠁿</span> Scotland</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇲🇦</span> Morocco</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇭🇹</span> Haiti</div>
+        </div>
+        <div class="pred-note-text">Scotland lead after MD1 — shocker. But Brazil's class will prevail. Morocco could steal 2nd.</div>
+      </div>
+
+      <div class="pred-card">
+        <div class="pred-header"><span class="pred-group-label">Group D</span><span class="pred-conf conf-high">High confidence</span></div>
+        <div class="pred-teams">
+          <div class="pred-row w1"><span class="pred-pos p1">1st</span><span>🇺🇸</span> USA</div>
+          <div class="pred-row w2"><span class="pred-pos p2">2nd</span><span>🇦🇺</span> Australia</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇹🇷</span> Türkiye</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇵🇾</span> Paraguay</div>
+        </div>
+        <div class="pred-note-text">USA 4-1 Paraguay, Australia 2-0 Türkiye. Both already look nailed on to advance.</div>
+      </div>
+
+      <div class="pred-card">
+        <div class="pred-header"><span class="pred-group-label">Group E</span><span class="pred-conf conf-high">High confidence</span></div>
+        <div class="pred-teams">
+          <div class="pred-row w1"><span class="pred-pos p1">1st</span><span>🇩🇪</span> Germany</div>
+          <div class="pred-row w2"><span class="pred-pos p2">2nd</span><span>🇨🇮</span> Ivory Coast</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇪🇨</span> Ecuador</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇨🇼</span> Curaçao</div>
+        </div>
+        <div class="pred-note-text">Germany's 7-1 win is MD1's statement result. Ivory Coast won 90th-min — steel and class.</div>
+      </div>
+
+      <div class="pred-card">
+        <div class="pred-header"><span class="pred-group-label">Group F</span><span class="pred-conf conf-med">Medium</span></div>
+        <div class="pred-teams">
+          <div class="pred-row w1"><span class="pred-pos p1">1st</span><span>🇳🇱</span> Netherlands</div>
+          <div class="pred-row w2"><span class="pred-pos p2">2nd</span><span>🇯🇵</span> Japan</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇸🇪</span> Sweden</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇹🇳</span> Tunisia</div>
+        </div>
+        <div class="pred-note-text">Netherlands 2-2 Japan was a thriller. Sweden vs Tunisia (June 15) could still shake it up.</div>
+      </div>
+
+      <div class="pred-card">
+        <div class="pred-header"><span class="pred-group-label">Group G</span><span class="pred-conf conf-high">High confidence</span></div>
+        <div class="pred-teams">
+          <div class="pred-row w1"><span class="pred-pos p1">1st</span><span>🇧🇪</span> Belgium</div>
+          <div class="pred-row w2"><span class="pred-pos p2">2nd</span><span>🇮🇷</span> Iran</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇪🇬</span> Egypt</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇳🇿</span> New Zealand</div>
+        </div>
+        <div class="pred-note-text">Belgium have the experience and depth. Iran are organised and physical — a genuine 2nd place contender.</div>
+      </div>
+
+      <div class="pred-card">
+        <div class="pred-header"><span class="pred-group-label">Group H</span><span class="pred-conf conf-high">High confidence</span></div>
+        <div class="pred-teams">
+          <div class="pred-row w1"><span class="pred-pos p1">1st</span><span>🇪🇸</span> Spain</div>
+          <div class="pred-row w2"><span class="pred-pos p2">2nd</span><span>🇺🇾</span> Uruguay</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇸🇦</span> Saudi Arabia</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇨🇻</span> Cape Verde</div>
+        </div>
+        <div class="pred-note-text">Spain are tournament favourites. Uruguay have the grit. Cape Verde's debut ends here.</div>
+      </div>
+
+      <div class="pred-card">
+        <div class="pred-header"><span class="pred-group-label">Group I</span><span class="pred-conf conf-high">High confidence</span></div>
+        <div class="pred-teams">
+          <div class="pred-row w1"><span class="pred-pos p1">1st</span><span>🇫🇷</span> France</div>
+          <div class="pred-row w2"><span class="pred-pos p2">2nd</span><span>🇸🇳</span> Senegal</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇳🇴</span> Norway</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇮🇶</span> Iraq</div>
+        </div>
+        <div class="pred-note-text">France have the deepest squad in the tournament. Senegal are Africa's strongest — hungry for a deep run.</div>
+      </div>
+
+      <div class="pred-card">
+        <div class="pred-header"><span class="pred-group-label">Group J</span><span class="pred-conf conf-high">High confidence</span></div>
+        <div class="pred-teams">
+          <div class="pred-row w1"><span class="pred-pos p1">1st</span><span>🇦🇷</span> Argentina</div>
+          <div class="pred-row w2"><span class="pred-pos p2">2nd</span><span>🇦🇹</span> Austria</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇩🇿</span> Algeria</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇯🇴</span> Jordan</div>
+        </div>
+        <div class="pred-note-text">Defending champions Argentina with Messi. Austria are a serious European side — Algeria could surprise.</div>
+      </div>
+
+      <div class="pred-card">
+        <div class="pred-header"><span class="pred-group-label">Group K</span><span class="pred-conf conf-high">High confidence</span></div>
+        <div class="pred-teams">
+          <div class="pred-row w1"><span class="pred-pos p1">1st</span><span>🇵🇹</span> Portugal</div>
+          <div class="pred-row w2"><span class="pred-pos p2">2nd</span><span>🇨🇴</span> Colombia</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇺🇿</span> Uzbekistan</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇨🇩</span> DR Congo</div>
+        </div>
+        <div class="pred-note-text">Portugal led by Bruno Fernandes (Ronaldo at 41 is more passenger than driver). Colombia are South America's dark horses.</div>
+      </div>
+
+      <div class="pred-card">
+        <div class="pred-header"><span class="pred-group-label">Group L</span><span class="pred-conf conf-high">High confidence</span></div>
+        <div class="pred-teams">
+          <div class="pred-row w1"><span class="pred-pos p1">1st</span><span>🏴󠁧󠁢󠁥󠁮󠁧󠁿</span> England</div>
+          <div class="pred-row w2"><span class="pred-pos p2">2nd</span><span>🇭🇷</span> Croatia</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇬🇭</span> Ghana</div>
+          <div class="pred-row out"><span class="pred-pos pe">Out</span><span>🇵🇦</span> Panama</div>
+        </div>
+        <div class="pred-note-text">England are strong favourites. Croatia always find a way. A repeat of the 2018 semi-final dynamic looms.</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Q1: ALL 48 TEAMS BY CONTINENT -->
+<div class="section" id="teams">
+  <div class="section-header">
+    <div class="section-icon">🌍</div>
+    <div>
+      <div class="section-title">All 48 Teams by Confederation</div>
+    </div>
+  </div>
+  <div class="section-body">
+    <p style="font-size:14px; color:var(--ink-3); margin-bottom:1.25rem;">This is the first-ever 48-team World Cup, expanded from 32 teams. Teams span 6 confederations across every inhabited continent.</p>
+    <div class="continent-grid">
+
+      <div class="continent-card">
+        <div class="continent-header">🏠 Hosts (Auto-qualified)<span class="continent-slots">3</span></div>
+        <div class="continent-teams">
+          <div class="c-team"><span class="c-flag">🇺🇸</span> United States</div>
+          <div class="c-team"><span class="c-flag">🇲🇽</span> Mexico</div>
+          <div class="c-team"><span class="c-flag">🇨🇦</span> Canada</div>
+        </div>
+      </div>
+
+      <div class="continent-card">
+        <div class="continent-header">🌍 Africa — CAF<span class="continent-slots">9</span></div>
+        <div class="continent-teams">
+          <div class="c-team"><span class="c-flag">🇩🇿</span> Algeria</div>
+          <div class="c-team"><span class="c-flag">🇨🇻</span> Cape Verde <span class="debut-tag">Debut</span></div>
+          <div class="c-team"><span class="c-flag">🇪🇬</span> Egypt</div>
+          <div class="c-team"><span class="c-flag">🇬🇭</span> Ghana</div>
+          <div class="c-team"><span class="c-flag">🇨🇮</span> Ivory Coast</div>
+          <div class="c-team"><span class="c-flag">🇲🇦</span> Morocco</div>
+          <div class="c-team"><span class="c-flag">🇸🇳</span> Senegal</div>
+          <div class="c-team"><span class="c-flag">🇿🇦</span> South Africa</div>
+          <div class="c-team"><span class="c-flag">🇹🇳</span> Tunisia</div>
+        </div>
+      </div>
+
+      <div class="continent-card">
+        <div class="continent-header">🌏 Asia — AFC<span class="continent-slots">8</span></div>
+        <div class="continent-teams">
+          <div class="c-team"><span class="c-flag">🇦🇺</span> Australia</div>
+          <div class="c-team"><span class="c-flag">🇮🇷</span> Iran</div>
+          <div class="c-team"><span class="c-flag">🇯🇵</span> Japan</div>
+          <div class="c-team"><span class="c-flag">🇯🇴</span> Jordan <span class="debut-tag">Debut</span></div>
+          <div class="c-team"><span class="c-flag">🇶🇦</span> Qatar</div>
+          <div class="c-team"><span class="c-flag">🇸🇦</span> Saudi Arabia</div>
+          <div class="c-team"><span class="c-flag">🇰🇷</span> South Korea</div>
+          <div class="c-team"><span class="c-flag">🇺🇿</span> Uzbekistan <span class="debut-tag">Debut</span></div>
+        </div>
+      </div>
+
+      <div class="continent-card">
+        <div class="continent-header">🌎 CONCACAF<span class="continent-slots">6</span></div>
+        <div class="continent-teams">
+          <div class="c-team"><span class="c-flag">🇺🇸</span> USA (host)</div>
+          <div class="c-team"><span class="c-flag">🇲🇽</span> Mexico (host)</div>
+          <div class="c-team"><span class="c-flag">🇨🇦</span> Canada (host)</div>
+          <div class="c-team"><span class="c-flag">🇨🇼</span> Curaçao <span class="debut-tag">Debut</span></div>
+          <div class="c-team"><span class="c-flag">🇵🇦</span> Panama</div>
+          <div class="c-team"><span class="c-flag">🇭🇹</span> Haiti</div>
+        </div>
+      </div>
+
+      <div class="continent-card">
+        <div class="continent-header">🌎 South America — CONMEBOL<span class="continent-slots">6</span></div>
+        <div class="continent-teams">
+          <div class="c-team"><span class="c-flag">🇦🇷</span> Argentina</div>
+          <div class="c-team"><span class="c-flag">🇧🇷</span> Brazil</div>
+          <div class="c-team"><span class="c-flag">🇨🇴</span> Colombia</div>
+          <div class="c-team"><span class="c-flag">🇪🇨</span> Ecuador</div>
+          <div class="c-team"><span class="c-flag">🇵🇾</span> Paraguay</div>
+          <div class="c-team"><span class="c-flag">🇺🇾</span> Uruguay</div>
+        </div>
+      </div>
+
+      <div class="continent-card">
+        <div class="continent-header">🌍 Europe — UEFA<span class="continent-slots">16</span></div>
+        <div class="continent-teams">
+          <div class="c-team"><span class="c-flag">🇦🇹</span> Austria</div>
+          <div class="c-team"><span class="c-flag">🇧🇪</span> Belgium</div>
+          <div class="c-team"><span class="c-flag">🇧🇦</span> Bosnia & Herzegovina</div>
+          <div class="c-team"><span class="c-flag">🇨🇿</span> Czechia</div>
+          <div class="c-team"><span class="c-flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span> England</div>
+          <div class="c-team"><span class="c-flag">🇫🇷</span> France</div>
+          <div class="c-team"><span class="c-flag">🇩🇪</span> Germany</div>
+          <div class="c-team"><span class="c-flag">🇭🇷</span> Croatia</div>
+          <div class="c-team"><span class="c-flag">🇳🇱</span> Netherlands</div>
+          <div class="c-team"><span class="c-flag">🇳🇴</span> Norway</div>
+          <div class="c-team"><span class="c-flag">🇵🇹</span> Portugal</div>
+          <div class="c-team"><span class="c-flag">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span> Scotland</div>
+          <div class="c-team"><span class="c-flag">🇪🇸</span> Spain</div>
+          <div class="c-team"><span class="c-flag">🇸🇪</span> Sweden</div>
+          <div class="c-team"><span class="c-flag">🇨🇭</span> Switzerland</div>
+          <div class="c-team"><span class="c-flag">🇹🇷</span> Türkiye</div>
+        </div>
+      </div>
+
+      <div class="continent-card">
+        <div class="continent-header">🌏 Oceania — OFC<span class="continent-slots">1</span></div>
+        <div class="continent-teams">
+          <div class="c-team"><span class="c-flag">🇳🇿</span> New Zealand</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Q2: TOP 10 CONTENDERS -->
+<div class="section" id="contenders">
+  <div class="section-header">
+    <div class="section-icon">🏆</div>
+    <div><div class="section-title">Top 10 Contenders to Win</div></div>
+  </div>
+  <div class="section-body">
+    <div class="contender-list">
+      <div class="contender">
+        <div class="contender-rank">1</div>
+        <div class="c-flag" style="font-size:22px;">🇪🇸</div>
+        <div class="contender-info">
+          <div class="contender-name">Spain</div>
+          <div class="contender-note">Reigning Euro 2024 champions. Most bet-on team to lift the trophy.</div>
+        </div>
+        <span class="badge badge-green">Favourite</span>
+      </div>
+      <div class="contender">
+        <div class="contender-rank">2</div>
+        <div class="c-flag" style="font-size:22px;">🇫🇷</div>
+        <div class="contender-info">
+          <div class="contender-name">France</div>
+          <div class="contender-note">Deep squad, 2018 winners. Co-favourite at +500 odds.</div>
+        </div>
+        <span class="contender-titles">2 titles</span>
+      </div>
+      <div class="contender">
+        <div class="contender-rank">3</div>
+        <div class="c-flag" style="font-size:22px;">🏴󠁧󠁢󠁥󠁮󠁧󠁿</div>
+        <div class="contender-info">
+          <div class="contender-name">England</div>
+          <div class="contender-note">Experienced squad, hungry to end 60-year trophy drought.</div>
+        </div>
+        <span class="contender-titles">1 title</span>
+      </div>
+      <div class="contender">
+        <div class="contender-rank">4</div>
+        <div class="c-flag" style="font-size:22px;">🇵🇹</div>
+        <div class="contender-info">
+          <div class="contender-name">Portugal</div>
+          <div class="contender-note">Surged to 3rd most bet-on. Bruno Fernandes in top form. Ronaldo at 41.</div>
+        </div>
+        <span class="badge badge-gold">Dark horse</span>
+      </div>
+      <div class="contender">
+        <div class="contender-rank">5</div>
+        <div class="c-flag" style="font-size:22px;">🇧🇷</div>
+        <div class="contender-info">
+          <div class="contender-name">Brazil</div>
+          <div class="contender-note">Under Ancelotti — more organized, deadly attack. ~+900 odds.</div>
+        </div>
+        <span class="contender-titles">5 titles</span>
+      </div>
+      <div class="contender">
+        <div class="contender-rank">6</div>
+        <div class="c-flag" style="font-size:22px;">🇦🇷</div>
+        <div class="contender-info">
+          <div class="contender-name">Argentina</div>
+          <div class="contender-note">Defending champions. Messi aiming for back-to-back.</div>
+        </div>
+        <span class="contender-titles">3 titles</span>
+      </div>
+      <div class="contender">
+        <div class="contender-rank">7</div>
+        <div class="c-flag" style="font-size:22px;">🇩🇪</div>
+        <div class="contender-info">
+          <div class="contender-name">Germany</div>
+          <div class="contender-note">In transition but always dangerous at tournaments.</div>
+        </div>
+        <span class="contender-titles">4 titles</span>
+      </div>
+      <div class="contender">
+        <div class="contender-rank">8</div>
+        <div class="c-flag" style="font-size:22px;">🇳🇱</div>
+        <div class="contender-info">
+          <div class="contender-name">Netherlands</div>
+          <div class="contender-note">Talented generation. Three-time runners-up, still hunting first title.</div>
+        </div>
+        <span class="contender-titles">0 titles</span>
+      </div>
+      <div class="contender">
+        <div class="contender-rank">9</div>
+        <div class="c-flag" style="font-size:22px;">🇲🇦</div>
+        <div class="contender-info">
+          <div class="contender-name">Morocco</div>
+          <div class="contender-note">First African semi-finalist (2022). Growing force in world football.</div>
+        </div>
+        <span class="badge badge-gold">Dark horse</span>
+      </div>
+      <div class="contender">
+        <div class="contender-rank">10</div>
+        <div class="c-flag" style="font-size:22px;">🇧🇪</div>
+        <div class="contender-info">
+          <div class="contender-name">Belgium</div>
+          <div class="contender-note">Experienced squad. Best result: 3rd place in 2018.</div>
+        </div>
+        <span class="contender-titles">0 titles</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Q3 + Q4: WORLD CUP HISTORY -->
+<div class="section" id="history">
+  <div class="section-header">
+    <div class="section-icon">📖</div>
+    <div><div class="section-title">World Cup History — All Winners</div></div>
+  </div>
+  <div class="section-body">
+    <div class="stat-grid" style="margin-bottom:1.5rem;">
+      <div class="stat-card"><div class="stat-num">1930</div><div class="stat-label">First World Cup — Uruguay</div></div>
+      <div class="stat-card"><div class="stat-num">Every 4</div><div class="stat-label">Years (except WW2 break)</div></div>
+      <div class="stat-card"><div class="stat-num">8</div><div class="stat-label">Nations ever won it</div></div>
+      <div class="stat-card"><div class="stat-num">22</div><div class="stat-label">Editions completed</div></div>
+    </div>
+
+    <p style="font-size:13px; color:var(--ink-3); margin-bottom:1.25rem;">Only 8 nations — all from Europe or South America — have ever lifted the trophy in 92 years of football's biggest tournament.</p>
+
+    <div class="winner-grid">
+      <div class="winner-card top">
+        <span class="winner-flag">🇧🇷</span>
+        <div class="winner-country">Brazil</div>
+        <div class="winner-trophies">5 🏆</div>
+        <div class="winner-years">1958, 1962, 1970,<br>1994, 2002</div>
+      </div>
+      <div class="winner-card top">
+        <span class="winner-flag">🇩🇪</span>
+        <div class="winner-country">Germany</div>
+        <div class="winner-trophies">4 🏆</div>
+        <div class="winner-years">1954, 1974,<br>1990, 2014</div>
+      </div>
+      <div class="winner-card top">
+        <span class="winner-flag">🇮🇹</span>
+        <div class="winner-country">Italy</div>
+        <div class="winner-trophies">4 🏆</div>
+        <div class="winner-years">1934, 1938,<br>1982, 2006</div>
+      </div>
+      <div class="winner-card">
+        <span class="winner-flag">🇦🇷</span>
+        <div class="winner-country">Argentina</div>
+        <div class="winner-trophies">3 🏆</div>
+        <div class="winner-years">1978, 1986, 2022</div>
+      </div>
+      <div class="winner-card">
+        <span class="winner-flag">🇫🇷</span>
+        <div class="winner-country">France</div>
+        <div class="winner-trophies">2 🏆</div>
+        <div class="winner-years">1998, 2018</div>
+      </div>
+      <div class="winner-card">
+        <span class="winner-flag">🇺🇾</span>
+        <div class="winner-country">Uruguay</div>
+        <div class="winner-trophies">2 🏆</div>
+        <div class="winner-years">1930, 1950</div>
+      </div>
+      <div class="winner-card">
+        <span class="winner-flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+        <div class="winner-country">England</div>
+        <div class="winner-trophies">1 🏆</div>
+        <div class="winner-years">1966</div>
+      </div>
+      <div class="winner-card">
+        <span class="winner-flag">🇪🇸</span>
+        <div class="winner-country">Spain</div>
+        <div class="winner-trophies">1 🏆</div>
+        <div class="winner-years">2010</div>
+      </div>
+    </div>
+
+    <h3 style="font-size:15px; font-weight:600; margin:2rem 0 1rem; color:var(--ink);">Last 5 World Cup Finals</h3>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-year">2022</div>
+        <div>
+          <div class="tl-winner">🇦🇷 Argentina</div>
+          <div class="tl-runner">vs 🇫🇷 France · <span class="tl-host">🇶🇦 Qatar</span></div>
+        </div>
+        <div class="tl-score">3–3 (4–2 pens)</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2018</div>
+        <div>
+          <div class="tl-winner">🇫🇷 France</div>
+          <div class="tl-runner">vs 🇭🇷 Croatia · <span class="tl-host">🇷🇺 Russia</span></div>
+        </div>
+        <div class="tl-score">4–2</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2014</div>
+        <div>
+          <div class="tl-winner">🇩🇪 Germany</div>
+          <div class="tl-runner">vs 🇦🇷 Argentina · <span class="tl-host">🇧🇷 Brazil</span></div>
+        </div>
+        <div class="tl-score">1–0 AET</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2010</div>
+        <div>
+          <div class="tl-winner">🇪🇸 Spain</div>
+          <div class="tl-runner">vs 🇳🇱 Netherlands · <span class="tl-host">🇿🇦 South Africa</span></div>
+        </div>
+        <div class="tl-score">1–0 AET</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2006</div>
+        <div>
+          <div class="tl-winner">🇮🇹 Italy</div>
+          <div class="tl-runner">vs 🇫🇷 France · <span class="tl-host">🇩🇪 Germany</span></div>
+        </div>
+        <div class="tl-score">1–1 (5–3 pens)</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ITALY NOT PLAYING -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon">🇮🇹</div>
+    <div><div class="section-title">Italy — The Biggest Shock</div></div>
+  </div>
+  <div class="section-body">
+    <div style="background:#fdecea; border-left:4px solid var(--red); border-radius:0 8px 8px 0; padding:14px 16px; margin-bottom:1.25rem;">
+      <strong style="color:var(--red);">4-time World Cup winners — missing their 3rd consecutive tournament</strong>
+    </div>
+    <p style="font-size:14px; color:var(--ink-2); margin-bottom:1rem;">Italy missed the 2018, 2022 and now 2026 World Cups — the first World Cup-winning nation ever to miss three tournaments in a row. What makes it worse: the 2026 edition has 48 teams, making qualification easier than ever.</p>
+    <div style="display:flex; gap:12px; flex-wrap:wrap;">
+      <div class="stat-card" style="flex:1; min-width:140px;">
+        <div class="stat-num" style="color:var(--red);">3</div>
+        <div class="stat-label">Consecutive World Cups missed</div>
+      </div>
+      <div class="stat-card" style="flex:1; min-width:140px;">
+        <div class="stat-num">4</div>
+        <div class="stat-label">World Cup titles (all-time)</div>
+      </div>
+    </div>
+    <p style="font-size:13px; color:var(--ink-3); margin-top:1rem;">Italy finished 2nd in qualifying behind Norway and lost their UEFA playoff final to Bosnia and Herzegovina on penalties. The Italian football chief subsequently resigned.</p>
+  </div>
+</div>
+
+<!-- INDIAN ORIGIN PLAYERS -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon">🇮🇳</div>
+    <div><div class="section-title">Indian-Origin Players at the 2026 World Cup</div></div>
+  </div>
+  <div class="section-body">
+    <p style="font-size:14px; color:var(--ink-3); margin-bottom:1.25rem;">After analysing all 48 squads — 4 players of Indian origin are competing at the 2026 World Cup across 4 different nations.</p>
+    <div class="player-grid">
+      <div class="player-card">
+        <div class="player-nat">🇳🇿 New Zealand</div>
+        <div class="player-name">Sarpreet Singh</div>
+        <div class="player-meta">
+          Age: 27 · Attacking Midfielder<br>
+          Former Bayern Munich player.<br>
+          First Indian-origin player in the Bundesliga.
+        </div>
+        <div class="player-root">Punjab roots</div>
+      </div>
+      <div class="player-card">
+        <div class="player-nat">🇦🇺 Australia</div>
+        <div class="player-name">Nishan Velupillay</div>
+        <div class="player-meta">
+          Age: 25 · Winger<br>
+          Melbourne Victory.<br>
+          Anglo-Indian mother, Malaysian-Sri Lankan father.
+        </div>
+        <div class="player-root">Anglo-Indian roots</div>
+      </div>
+      <div class="player-card">
+        <div class="player-nat">🇨🇩 DR Congo</div>
+        <div class="player-name">Samuel Moutoussamy</div>
+        <div class="player-meta">
+          Age: 29 · Defensive Midfielder<br>
+          Born in Paris. Plays in Greek Super League.<br>
+          Congolese mother, South Indian father.
+        </div>
+        <div class="player-root">South India roots</div>
+      </div>
+      <div class="player-card">
+        <div class="player-nat">🇶🇦 Qatar</div>
+        <div class="player-name">Tahsin Jamshid</div>
+        <div class="player-meta">
+          Age: 19 · Winger<br>
+          Born in Doha. International debut vs Afghanistan.
+        </div>
+        <div class="player-root">Kerala (Kannur) roots</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- INDIA QUALIFYING -->
+<div class="section" id="india">
+  <div class="section-header">
+    <div class="section-icon">🐯</div>
+    <div><div class="section-title">India's 2026 Qualifying Campaign</div></div>
+  </div>
+  <div class="section-body">
+    <div class="stat-grid" style="margin-bottom:1.5rem;">
+      <div class="stat-card"><div class="stat-num" style="color:var(--red);">3rd</div><div class="stat-label">Place in AFC Group A</div></div>
+      <div class="stat-card"><div class="stat-num">1</div><div class="stat-label">Win from 6 matches</div></div>
+      <div class="stat-card"><div class="stat-num">141</div><div class="stat-label">Current FIFA ranking</div></div>
+      <div class="stat-card"><div class="stat-num">0</div><div class="stat-label">World Cups ever qualified</div></div>
+    </div>
+
+    <h3 style="font-size:14px; font-weight:600; margin-bottom:1rem;">Group A final standings</h3>
+    <table style="margin-bottom:1.5rem;">
+      <thead>
+        <tr><th>Team</th><th>W</th><th>D</th><th>L</th><th>Pts</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><div class="team-cell"><span class="pos-dot pos-1">1</span><span class="flag">🇶🇦</span><span class="team-name">Qatar</span></div></td>
+          <td>5</td><td>0</td><td>1</td><td>15</td>
+          <td><span class="badge badge-green">Advanced</span></td>
+        </tr>
+        <tr>
+          <td><div class="team-cell"><span class="pos-dot pos-2">2</span><span class="flag">🇰🇼</span><span class="team-name">Kuwait</span></div></td>
+          <td>3</td><td>1</td><td>2</td><td>10</td>
+          <td><span class="badge badge-green">Advanced</span></td>
+        </tr>
+        <tr>
+          <td><div class="team-cell"><span class="pos-dot pos-3">3</span><span class="flag">🇮🇳</span><span class="team-name">India</span></div></td>
+          <td>1</td><td>1</td><td>4</td><td>4</td>
+          <td><span class="badge badge-red">Eliminated</span></td>
+        </tr>
+        <tr>
+          <td><div class="team-cell"><span class="pos-dot pos-4">4</span><span class="flag">🇦🇫</span><span class="team-name">Afghanistan</span></div></td>
+          <td>0</td><td>0</td><td>6</td><td>0</td>
+          <td><span class="badge badge-gray">Eliminated</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-size:14px; font-weight:600; margin-bottom:1rem;">Key match results</h3>
+    <div class="matches" style="margin-bottom:1.5rem;">
+      <div class="match">
+        <div class="match-teams">🇮🇳 India vs 🇰🇼 Kuwait</div>
+        <div class="match-score">1 – 0</div>
+        <span class="badge badge-green">Win</span>
+      </div>
+      <div class="match">
+        <div class="match-teams">🇮🇳 India vs 🇶🇦 Qatar (home)</div>
+        <div class="match-score">0 – 3</div>
+        <span class="badge badge-red">Loss</span>
+      </div>
+      <div class="match">
+        <div class="match-teams">🇮🇳 India vs 🇶🇦 Qatar (final)</div>
+        <div class="match-score">1 – 2</div>
+        <span class="badge badge-gold">So close</span>
+      </div>
+    </div>
+    <p style="font-size:13px; color:var(--ink-3); margin-bottom:1.5rem;">
+      <strong>The heartbreak:</strong> Lallianzuala Chhangte gave India the lead in the 37th minute against Qatar in the final match — but Qatar hit back twice. Even a draw wouldn't have helped, as Kuwait beat Afghanistan simultaneously.
+    </p>
+
+    <h3 style="font-size:14px; font-weight:600; margin-bottom:0.75rem;">India's FIFA ranking history</h3>
+    <div class="rank-bars">
+      <div class="rbar-wrap">
+        <div class="rbar-outer">
+          <div class="rbar rbar-good" style="height:90px;"><span class="rbar-val">94</span></div>
+        </div>
+        <span class="rbar-year">1996</span>
+      </div>
+      <div class="rbar-wrap">
+        <div class="rbar-outer">
+          <div class="rbar rbar-bad" style="height:12px;"><span class="rbar-val">173</span></div>
+        </div>
+        <span class="rbar-year">2015</span>
+      </div>
+      <div class="rbar-wrap">
+        <div class="rbar-outer">
+          <div class="rbar rbar-good" style="height:60px;"><span class="rbar-val">129</span></div>
+        </div>
+        <span class="rbar-year">2017</span>
+      </div>
+      <div class="rbar-wrap">
+        <div class="rbar-outer">
+          <div class="rbar rbar-good" style="height:88px;"><span class="rbar-val">99</span></div>
+        </div>
+        <span class="rbar-year">2023</span>
+      </div>
+      <div class="rbar-wrap">
+        <div class="rbar-outer">
+          <div class="rbar rbar-bad" style="height:30px;"><span class="rbar-val">141</span></div>
+        </div>
+        <span class="rbar-year">2026</span>
+      </div>
+    </div>
+    <p style="font-size:12px; color:var(--ink-3); margin-top:6px; margin-bottom:1.5rem;">Taller bar = better ranking. All-time best: 94 (1996). Currently: ~141.</p>
+  </div>
+</div>
+
+<!-- INDIA 2030 -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon">🔭</div>
+    <div><div class="section-title">Can India Qualify for 2030?</div></div>
+  </div>
+  <div class="section-body">
+    <p style="font-size:14px; color:var(--ink-2); margin-bottom:1.5rem;">The 2030 World Cup will again be 48 teams with 8 AFC slots. The door stays equally wide open — India just needs to be ready to walk through it.</p>
+
+    <h3 style="font-size:14px; font-weight:600; margin-bottom:1rem;">What India needs to change</h3>
+    <div class="needs" style="margin-bottom:1.5rem;">
+      <div class="need-item">
+        <div class="need-icon">📈</div>
+        <div>
+          <div class="need-title">Reach top 100 in FIFA rankings</div>
+          <div class="need-desc">Better seeding avoids Japan, South Korea, Iran, Saudi Arabia in the group stage — the difference between possible and near-impossible.</div>
+        </div>
+      </div>
+      <div class="need-item">
+        <div class="need-icon">🏟️</div>
+        <div>
+          <div class="need-title">Expand ISL match volume</div>
+          <div class="need-desc">India plays ~15 league matches per season vs 35+ in qualifying nations. More competitive minutes means better players.</div>
+        </div>
+      </div>
+      <div class="need-item">
+        <div class="need-icon">⭐</div>
+        <div>
+          <div class="need-title">Post-Chhetri generation must step up</div>
+          <div class="need-desc">Sunil Chhetri retired in 2024. The 2017 U-17 World Cup generation needs to mature into senior stars by 2028–30.</div>
+        </div>
+      </div>
+      <div class="need-item">
+        <div class="need-icon">🎯</div>
+        <div>
+          <div class="need-title">Favourable group draw</div>
+          <div class="need-desc">With 8 AFC spots from ~46 nations, India needs to avoid the powerhouses in round 2 qualifying groups.</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-size:14px; font-weight:600; margin-bottom:1rem;">2030 outlook</h3>
+    <div class="verdict-rows" style="background:var(--bg); border-radius:8px; border:1px solid var(--border); padding:0 1rem;">
+      <div class="verdict-row">
+        <span class="verdict-label">AFC slots for 2030</span>
+        <span class="verdict-val">8 direct + 1 playoff</span>
+      </div>
+      <div class="verdict-row">
+        <span class="verdict-label">Favourable draw + ranking boost</span>
+        <span class="badge badge-gold">Possible — ~20–25%</span>
+      </div>
+      <div class="verdict-row">
+        <span class="verdict-label">Same ranking, tough group</span>
+        <span class="badge badge-red">Unlikely</span>
+      </div>
+      <div class="verdict-row">
+        <span class="verdict-label">Structural reform + youth pipeline</span>
+        <span class="badge badge-green">Genuinely competitive</span>
+      </div>
+      <div class="verdict-row">
+        <span class="verdict-label">India's World Cup appearances ever</span>
+        <span class="verdict-val" style="color:var(--red);">0 — never qualified</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- /padding wrapper -->
+
+<footer>
+  <strong>FIFA World Cup 2026 — Complete Guide</strong><br>
+  June 11 – July 19, 2026 &nbsp;·&nbsp; USA, Mexico & Canada &nbsp;·&nbsp; 48 teams<br>
+  <span style="margin-top:0.75rem; display:inline-block; font-size:12px;">
+    A guide by <a href="index.html" style="color:var(--gold); text-decoration:none; font-weight:600;">KushalBuilds</a>
+    &nbsp;·&nbsp; Data captured June 15, 2026
+  </span>
+</footer>
+
+</body>
+</html>
